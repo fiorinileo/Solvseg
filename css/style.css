@@ -1,0 +1,296 @@
+    /*
+        Orden de implementación de estilos, con el fin de mantener conscistencia y facilitar la lectura:
+            1.Posicionamiento: todo lo referente a este, como static, absolute, relative o fixed
+            2.Box Model: Content, Padding, Border, Margin
+            3.Tipografía: Tipo, tamaños de fuente, etc.
+            4.Estilos visuales: box-shadow, border-radius, gradients, etc
+            5.Otros: reglas css y más
+
+
+    */ 
+
+
+                    /* 🇻​​​​​🇦​​​​​🇷​​​​​🇮​​​​​🇦​​​​​🇧​​​​​🇱​​​​​🇪​​​​​🇸​​​​​ */
+
+:root{
+    /*🇨​​​​​🇴​​​​​🇱​​​​​🇴​​​​​🇷​​​​​🇸​​​​​*/
+            /*      𝘽𝙍𝘼𝙉𝘿 𝘾𝙊𝙇𝙊𝙍𝙎        */
+            --brand-purple: #8E1073;
+            --brand-green: #117F65;
+
+            /*      𝙎𝙔𝙎𝙏𝙀𝙈 𝘾𝙊𝙇𝙊𝙍𝙎       */
+
+                    /*      𝙁𝙊𝙉𝙏 𝘾𝙊𝙇𝙊𝙍𝙎       */
+                    --font-white:#e5e5e5;
+                    --font-black:#3a3a3a;
+
+                    /*      𝘽𝘼𝙎𝙄𝘾 𝘾𝙊𝙇𝙊𝙍𝙎        */
+                    --basic-white: #f9f9f9;
+                    --basic-black:#1c1d21;
+                    --basic-grey:#898989;
+
+                    /*      𝙋𝙐𝙍𝙋𝙇𝙀        */
+                    --purple-normal: #9C117E;
+                    --purple-80: #B04198;
+                    --purple-60: #C470B2;
+                    --purple-40: #D7A0CB;
+
+                    /*      𝙂𝙍𝙀𝙀𝙉       */
+                    --green-normal: #098B64;
+                    --green-80: #3AA383;
+                    --green-60: #6CBAA2;
+                    --green-40: #9DD1C1;
+
+                    /*      𝘼𝘾𝙏𝙄𝙊𝙉 𝘾𝙊𝙇𝙊𝙍𝙎       */
+                    --action-purple: #9C117E;
+                    --action-green: #1E8F6E;
+
+                    /*      𝘽𝙊𝙊𝙇𝙀𝘼𝙉 𝘾𝙊𝙇𝙊𝙍𝙎      */
+                    --boolean-true:#12BC67;
+                    --boolean-false:#D52A71;
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .15s;
+}
+
+html{
+    font-size: 62.5%;
+}
+main{
+    padding-top: 87px;
+}
+body{
+    min-width: 320px;
+    color:var(--font-black);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.4rem;
+    background: var(--font-white);
+}
+h1{
+    font-size: 4rem;
+    color:var(--font-white);
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+    color: var(--font-black)
+}
+h1, h2, h3{
+    font-weight: 700;
+
+}
+a{
+    color:var(--font-white);
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+/*navbar*/
+.navbar{
+    background:var(--green-normal);
+    position:fixed;
+    width:100%;
+    z-index: 1000;
+}
+
+.flex-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.navbar-toggle{
+    border: transparent;
+    background: transparent;
+    color: var(--font-white);
+    font-size: 1.4rem;
+}
+
+.navbar-links{
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar-open{
+    height:100vh;
+}
+.navbar__logo{
+    height:60px;
+}
+.navbar-link{
+    font-size: 2.4rem;
+    list-style: none;
+    margin: 20px 10px;
+    border-bottom: 2px solid var(--basic-white);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.navbar-link:hover{
+    background-color: var(--purple-80);
+    border-radius: 5px;
+    border-color: var(--basic-white);
+    box-shadow: var(--basic-black) 2px 2px 5px;
+}
+.main__header{
+    padding: 40px;
+    padding-top: 95px;
+    width:100%;
+    height:calc(100vh - 95px);
+    background: url("../assets/images/domo-fondo.jpg") no-repeat center center/cover;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.main__header h1{
+    text-shadow: var(--basic-black) 2px 2px 7px;
+}
+.btn{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--action-purple);
+    color: var(--font-white);
+    font-size: 2.4rem;
+    align-items: center;
+    justify-content: center;
+}
+.btn img{
+    width: 60px;
+    margin: 7px;
+}
+.btn:hover{
+background-color: var(--purple-60);
+}
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: var(--purple-80);
+	opacity: 50%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+.carousel__anterior{
+    left: -10px;
+    z-index: 1;
+}
+
+.carousel__siguiente{
+    right:0;
+
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+.services__container{
+    margin-bottom: 50px;
+}
+.services__container img{
+    vertical-align: top;
+    margin-right: 20px;
+    width:100%;
+    max-width: 550px;
+}
+.services__title{
+    text-align: center;
+}
+@media only screen and (min-width: 920px) {
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-header{
+        display: block;
+    }
+    .flex-nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 40px;
+    }
+    .navbar-links{
+        height: auto;
+    }
+    ul{
+        text-align: center;
+        margin: 0 20px;
+    }
+    .navbar-link {
+        display: inline-block;
+        border-bottom: none;
+        padding: 0 10px;
+        width:auto;
+    }
+
+
+ }
