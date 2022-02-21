@@ -76,24 +76,28 @@ h1{
     color:var(--font-white);
 }
 h2{
-    font-size: 2.5rem;
-}
+    font-size: 2.5rem;}
 h3{
     font-size: 2rem;
     color: var(--font-black)
 }
 h1, h2, h3{
     font-weight: 700;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
 
 }
 a{
     color:var(--font-white);
     text-decoration: none;
+
 }
 
 p{
     max-width:600px;
     margin: auto;
+    text-shadow: 0px 2px 2px rgba(51, 51, 51, 0.25);
+
 }
 .container{
     max-width: 1200px;
@@ -103,7 +107,7 @@ p{
 
 /*navbar*/
 .navbar{
-    background:var(--green-normal);
+    background: linear-gradient(272.74deg, var(--brand-green) 0%, var(--green-normal) 100%);
     position:fixed;
     width:100%;
     z-index: 1000;
@@ -148,8 +152,12 @@ p{
     padding: 0 10px;
     border-radius: 5px;
 }
+.navbar-link a{
+
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
 .navbar-link:hover{
-    background-color: var(--purple-80);
+    background: linear-gradient(124.25deg, var(--purple-80) 0%, var(--purple-60) 100%);
     border-radius: 5px;
     border-color: var(--basic-white);
     box-shadow: var(--basic-black) 2px 2px 5px;
@@ -169,15 +177,16 @@ p{
 .main__header h1{
     text-shadow: var(--basic-black) 2px 2px 7px;
 }
-.btn{
+.btn, .btn-ch{
     width: 250px;
     height: 60px;
     cursor: pointer;
     display: flex;
     padding: 10px;
-    border-radius: 5px;
     font-weight: bold;
-    background-color: var(--action-purple);
+    background: linear-gradient(94.25deg, #9C117E 0%, #C432A4 100%); 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
     color: var(--font-white);
     font-size: 2.4rem;
     align-items: center;
@@ -187,8 +196,17 @@ p{
     width: 60px;
     margin: 7px;
 }
-.btn:hover{
-background-color: var(--purple-60);
+.services__presentation .btn-ch{
+    margin: auto;
+    width:200px;
+    font-size: 2rem;
+}
+.services__presentation .btn-ch img{
+    width:40px;
+    margin: 7px;
+}
+.btn:hover, .btn-ch:hover{
+background: var(--purple-60);
 }
 .contenedor{
     max-width: 1200px;
@@ -257,7 +275,10 @@ background-color: var(--purple-60);
 }
 
 .services__container{
-    margin-bottom: 50px;
+    margin: 30px 0;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius:4px;
 }
 .services__container img{
     vertical-align: top;
@@ -272,13 +293,13 @@ background-color: var(--purple-60);
 .main__business{
     background: linear-gradient(180deg, #098B64 0%, #526C64 100%);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
-    
+    border-radius:4px;
     color: var(--font-white);
 }
 .main__business div{
-    padding: 0 40px;
+    padding: 0 10px;
 }
-.main__business h3, h2{
+.main__business h3, .main__business h2{
     color: var(--font-white);
     text-align: center;
     padding: 10px 0;
