@@ -91,6 +91,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    max-width:600px;
+    margin: auto;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -264,11 +268,40 @@ background-color: var(--purple-60);
 .services__title{
     text-align: center;
 }
+/*              🇧​​​​​🇺​​​​​🇸​​​​​🇮​​​​​🇳​​​​​🇪​​​​​🇸​​​​​🇸​​​​​                   */
 .main__business{
-    height: 853px;
     background: linear-gradient(180deg, #098B64 0%, #526C64 100%);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    
+    color: var(--font-white);
 }
+.main__business div{
+    padding: 0 40px;
+}
+.main__business h3, h2{
+    color: var(--font-white);
+    text-align: center;
+    padding: 10px 0;
+}
+.main__business .business__logo img{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 0;
+}
+.main__business .business__logo figure{
+    text-align: center;
+}
+.main__business .business__button{
+    padding: 20px 0;
+}
+.main__business .business__button a{
+    margin: auto;
+}
+.business__ajust{
+    max-width: 1200px;
+    margin: auto;
+}
+
 @media only screen and (min-width: 920px) {
     .navbar-toggle{
         display: none;
