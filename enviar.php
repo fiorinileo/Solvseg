@@ -162,7 +162,7 @@
         </div>
     </main>
     <footer>
-        <section class="contact__container">
+        <section class="contact-form__container">
             <div>
                 <h2>
                     Formulario de contacto
