@@ -108,14 +108,6 @@
                                         <img src="./assets/images/domo-fondo-2.jpg" alt="Harmony Tower">
                                         <p>Alarmas</p>
                                     </div>
-                                    <div class="carousel__elemento">
-                                        <img src="./assets/images/domo-fondo-2.jpg" alt="Empire State Building">
-                                        <p>Servicio 8</p>
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="./assets/images/domo-fondo-2.jpg" alt="Harmony Tower">
-                                        <p>Servicio 9</p>
-                                    </div>
                                 </div>
                 
                                 <button aria-label="Siguiente" class="carousel__siguiente">
@@ -170,30 +162,38 @@
         </div>
     </main>
     <footer>
-        <center>
-        <?php 
-            $myemail = 'leonardofiorini87@gmail.com';
-            $name = $_POST['nombre'];
-            $email = $_POST['email'];
-            $message = $_POST['mensaje'];
+        <section class="contact__container">
+            <div>
+                <h2>
+                    Formulario de contacto
+                </h2>
+            </div>
+            <center>
+            <?php 
+                $myemail = 'leonardofiorini87@gmail.com';
+                $name = $_POST['nombre'];
+                $email = $_POST['email'];
+                $message = $_POST['mensaje'];
 
-            $to = $myemail;
-            $email_subject = "Nuevo mensaje: $subject";
-            $email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
-            $headers = "From: $email";
+                $to = $myemail;
+                $email_subject = "Nuevo mensaje: $subject";
+                $email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
+                $headers = "From: $email";
 
-            mail($to, $email_subject, $email_body, $headers);
-            echo "El mensaje se ha enviado correctamente";
-            ?>
-            <form action="enviar.php" method="post">
-                <input type="text" name="nombre" placeholder="NOMBRE">
-                <input type="email" name="email" id="CORREO">
-                <textarea name="mensaje" type="text" placeholder="MENSAJE">
+                mail($to, $email_subject, $email_body, $headers);
+                echo "El mensaje se ha enviado correctamente";
+                ?>
+                <form action="enviar.php" method="post">
+                    <input type="text" name="nombre" placeholder="NOMBRE">
+                    <input type="email" name="email" placeholder="CORREO">
+                    <textarea name="mensaje" type="text" placeholder="MENSAJE">
 
-                </textarea>
-                <input type="submit" value="ENVIAR">
-            </form>
-        </center>
+                    </textarea>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </center>
+        </section>
+        
     </footer>
     <!-- GLIDER JS -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>    
