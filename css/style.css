@@ -266,12 +266,12 @@ div .carousel__indicadores .glider-dot{
 	opacity: 100%;
 }
 .carousel__anterior{
-    left: -5px;
+    left: -10px;
     z-index: 1;
 }
 
 .carousel__siguiente{
-    right: -5px;
+    right: -10px;
     z-index: 1;
 }
 
