@@ -280,6 +280,10 @@ div .carousel__indicadores .glider-dot{
 
 .carousel__elemento {
 	text-align: center;
+    box-shadow: 2px 2px 5px 0px #0000002e;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
 }
 
 .carousel__indicadores .glider-dot {
