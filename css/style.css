@@ -210,19 +210,22 @@ p{
     font-size: 2.4rem;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
+
 .btn img{
     width: 60px;
     margin: 7px;
 }
-.services__presentation .btn-ch{
+.carousel__services__container .btn-ch{
     margin: auto;
-    width:200px;
-    font-size: 2rem;
+    width:180px;
+    font-size: 1.8rem;
 }
-.services__presentation .btn-ch img{
+.carousel__services__container .btn-ch img{
     width:40px;
     margin: 7px;
+    height:auto;
 }
 .btn:hover, .btn-ch:hover{
 background: var(--purple-60);
@@ -237,21 +240,24 @@ background: var(--purple-60);
 .carousel__contenedor {
 	position: relative;
 }
+div .carousel__indicadores .glider-dot{
+    background:var(--action-purple);
+}
 
 .carousel__anterior,
 .carousel__siguiente {
 	position: absolute;
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	border: none;
 	top: calc(50% - 35px);
 	cursor: pointer;
 	line-height: 30px;
 	text-align: center;
-	background: none;
-	color: var(--purple-80);
-	opacity: 50%;
+	background: rgba(128, 128, 128, 0.301);
+	color: var(--basic-white);
+	opacity: 100%;
 }
 
 .carousel__anterior:hover,
@@ -304,6 +310,8 @@ background: var(--purple-60);
     margin-right: 20px;
     width:100%;
     max-width: 550px;
+    height:170px;
+    object-fit: cover;
 }
 .services__title{
     text-align: center;
