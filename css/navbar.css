@@ -4,7 +4,6 @@
     position:fixed;
     width:100%;
     z-index: 1000;
-    height:89px;
 }
 
 .container{
@@ -32,12 +31,12 @@
 }
 
 .main-navbar{
-    height: 0;
+    height:0;
     overflow: hidden;
 }
 
 .navbar-open{
-    margin: auto;
+   height: 100vh;
 }
 .navbar__logo{
     height:60px;
@@ -63,16 +62,18 @@
     margin-bottom: 0px;
 }
 .submenu {
-    width:0;
     height: 0;
     overflow: hidden;
 }
 
-.submenu .menu__link{
+.submenu .navbar__item{
     padding-left: 50px;
 }
 
 @media only screen and (min-width: 920px) {
+    .submenu{
+        width:0;
+    }
     .main-navbar{
         height: auto;
     }
@@ -114,6 +115,9 @@
         width:291px;
         height:auto;
         padding-bottom: 20px;
+    }
+    .navbar{
+        height:89px;
     }
 
  }
