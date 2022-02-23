@@ -1,6 +1,6 @@
 //nav Toggle - select button and links
 const navbarToggle = document.querySelector("#navbarToggle");
-const navbar = document.querySelector("#navbar-links");
+const navbar = document.querySelector("#main-navbar");
 
 //add event listener
 navbarToggle.addEventListener("click", ()=>{

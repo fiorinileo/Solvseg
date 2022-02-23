@@ -9,6 +9,7 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!---------------------- Fuentes ------------------->
@@ -32,12 +33,22 @@
                     </button>
                 </div>
                 
-                <nav class="navbar-links" id="navbar-links">
-                    <ul>
-                        <li class="navbar-link"><a href="#">Inicio</a></li>
-                        <li class="navbar-link"><a href="#">Servicios</a></li>
-                        <li class="navbar-link"><a href="#">Sobre nosotros</a></li>
-                        <li class="navbar-link"><a href="#">Contacto</a></li>
+                <nav class="main-navbar" id="main-navbar">
+                    <ul class="menu" id="menu">
+                        <li class="navbar__item"><a class="navbar__link" href="#">Inicio</a></li>
+                        <li class="navbar__item container-submenu">
+                            <a class="navbar__link submenu-btn" href="#">Servicios <i class="fa fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li class="navbar__item"><a class="navbar__link" href="#">CCTV</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="#">Video porteros</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="#">Infraestructura de red</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="#">Telefonía IP</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="#">Sistemas de alarmas</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Sobre nosotros</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Contacto</a></li>
+                        
                     </ul>
                 </nav>
             </div>    
