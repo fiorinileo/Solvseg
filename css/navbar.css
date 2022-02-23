@@ -1,0 +1,119 @@
+/*navbar*/
+.navbar{
+    background: linear-gradient(272.74deg, var(--brand-green) 0%, var(--green-normal) 100%);
+    position:fixed;
+    width:100%;
+    z-index: 1000;
+    height:89px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.flex-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-header{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.navbar-toggle{
+    border: transparent;
+    background: transparent;
+    color: var(--font-white);
+    font-size: 1.4rem;
+}
+
+.main-navbar{
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar-open{
+    margin: auto;
+}
+.navbar__logo{
+    height:60px;
+}
+.navbar__link{
+    display:block;
+    font-size: 2.4rem;
+    list-style: none;
+    margin: 20px 10px;
+    border-bottom: 2px solid var(--basic-white);
+    padding: 0 10px;
+    border-radius: 5px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__link:hover{
+    background: linear-gradient(124.25deg, var(--purple-80) 0%, var(--purple-60) 100%);
+    border-radius: 5px;
+    border-color: var(--basic-white);
+    box-shadow: var(--basic-black) 2px 2px 5px;
+}
+.container-submenu .navbar__link{
+    margin-bottom: 0px;
+}
+.submenu {
+    width:0;
+    height: 0;
+    overflow: hidden;
+}
+
+.submenu .menu__link{
+    padding-left: 50px;
+}
+
+@media only screen and (min-width: 920px) {
+    .main-navbar{
+        height: auto;
+    }
+    .navbar-toggle{
+        display: none;
+    }
+    .menu{
+        margin: auto;
+        display: flex;
+    }
+
+    .container-submenu{
+        position: relative;
+        width: 153.6px;
+    }
+    .submenu{
+        background: #098b647a;
+        position: absolute;
+        overflow: visible;
+        width:auto;
+        height: auto;
+        z-index: 1000;
+        padding: 15px;
+        border-radius: 5px;
+        left:50px;
+        opacity:0;
+        visibility: hidden;
+        width: 0;
+    }
+    .flex-nav{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .container-submenu:hover .submenu{
+        position:relative;
+        opacity: 100%;
+        visibility:visible;
+        width:291px;
+        height:auto;
+        padding-bottom: 20px;
+    }
+
+ }
