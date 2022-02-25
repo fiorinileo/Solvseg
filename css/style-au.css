@@ -88,8 +88,9 @@ h1, h2, h3{
 
 }
 a{
-    color:var(--font-white);
+    color:var(--font-black);
     text-decoration: none;
+    text-decoration: underline;
 
 }
 
@@ -207,6 +208,7 @@ background: var(--purple-60);
 .business__ajust{
     max-width: 1200px;
     margin: auto;
+
 }
 .contact__container{
     margin: 20px;
@@ -227,6 +229,7 @@ background: var(--purple-60);
     background-color: var(--basic-white);
     max-width: 1200px;
     height:200px;
+    
 
 }
 .enviar{
