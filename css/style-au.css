@@ -63,6 +63,7 @@ html{
 }
 main{
     padding-top: 87px;
+    height: 1400px;
 }
 body{
     min-width: 320px;
@@ -125,18 +126,7 @@ p{
 
 
 
-.main__header{
-    padding: 40px;
-    padding-top: 95px;
-    width:100%;
-    height:calc(100vh - 95px);
-    background: url("../assets/images/domo-fondo.jpg") no-repeat center center/cover;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
 
-}
 .main__header h1{
     text-shadow: var(--basic-black) 2px 2px 7px;
 }
@@ -145,7 +135,6 @@ p{
     height: 60px;
     cursor: pointer;
     display: flex;
-    padding: 10px;
     font-weight: bold;
     background: linear-gradient(94.25deg, #9C117E 0%, #C432A4 100%); 
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -167,15 +156,14 @@ background: var(--purple-60);
 }
 .contenedor{
     height:60vh;
-    width: 100vw;
+    width: 100%;
     margin: auto;
 }
 
 
 /*              🇧​​​​​🇺​​​​​🇸​​​​​🇮​​​​​🇳​​​​​🇪​​​​​🇸​​​​​🇸​​​​​                   */
 .main__business{
-    position:absolute;
-    height: 50vh;
+    height: 300px;
     width:100%;
     background: linear-gradient(180deg, #098B64 0%, #526C64 100%);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
@@ -183,7 +171,7 @@ background: var(--purple-60);
     color: var(--font-white);
 }
 .main__business div{
-    padding: 60px 0 120px;
+    padding-top: 50px;
     text-align: center;
 }
 .main__business h3, .main__business h2{
@@ -224,13 +212,23 @@ background: var(--purple-60);
 /* PRESENTATION */
 
 .presentation{
+    position: relative;
+    top: -60px;
     margin: auto;
-    padding-top: 470px;
+    padding:20px;
     background-color: var(--basic-white);
     max-width: 1200px;
-    height:200px;
-    
+    width:95%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
 
+}
+.presentation hr{
+    background-color: var(--purple-80);
+    height:3px;
+    width:200px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    
 }
 .enviar{
     background: #9C117E;
