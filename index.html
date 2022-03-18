@@ -39,11 +39,12 @@
                         <li class="navbar__item container-submenu">
                             <a class="navbar__link submenu-btn" href="#">Servicios <i class="fa fa-chevron-down"></i></a>
                             <ul class="submenu">
-                                <li class="navbar__item"><a class="navbar__link" href="#">CCTV</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="#">Video porteros</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="#">Infraestructura de red</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="#">Telefonía IP</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="#">Sistemas de alarmas</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-cctv.html">CCTV</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-doorbell.html">Video porteros</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-networking.html">Infraestructura de red</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-telephone-ip.html">Telefonía IP</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-domotic.html">Domótica</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-alarm.html">Sistemas de alarmas</a></li>
                             </ul>
                         </li>
                         <li class="navbar__item"><a class="navbar__link" href="sobre-nosotros.html">Acerca de nosotros</a></li>
@@ -231,13 +232,13 @@
                 </h2>
             </div>
             <center>
-                <form action="enviar.php" method="post">
-                    <input type="text" name="nombre" placeholder="NOMBRE">
+                <form action="mailto:leonardofiorini87@gmail.com" method="post">
+                    <input type="text" name="subject" placeholder="NOMBRE">
                     <input type="email" name="email" placeholder="CORREO">
                     <textarea name="mensaje" type="text" placeholder="MENSAJE">
                         
                     </textarea>
-                    <input type="submit" value="ENVIAR" class="enviar">
+                    <button type="submit" class="enviar"><a href="mailto:leonardofiorini87@gmail.com"> ENVIAR</a> </button>
                 </form>
             </center>
         </section>

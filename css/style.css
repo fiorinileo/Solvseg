@@ -97,6 +97,7 @@ ul{
     list-style: none;
 }
 input, textarea{
+    display: block;
     width:200px;
     background: #E5E5E5;
     border: 1.5px solid var(--action-purple);
@@ -109,7 +110,6 @@ input, textarea{
 }
 input{
     height:35px;
-    display: block;
 }
 
 input:focus, textarea:focus{

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- GLIDER JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/carousel.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!---------------------- Fuentes ------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+
+
+        <!--------------------- Titulo --------------------->
+        <title>Domotic | M&A</title>
+    </head>
+    <body>
+        <header class="navbar">
+                <div class="container flex-nav">
+                    <div class="navbar-header">
+                        <a href="index.html">
+                            <img class="navbar__logo" src="./assets/logo/logo-mya.svg" alt="Logo de empresa M&A">
+                        </a>
+                        <button class="navbar-toggle" id="navbarToggle">
+                            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <nav class="main-navbar" id="main-navbar">
+                        <ul class="menu" id="menu">
+                            <li class="navbar__item"><a class="navbar__link" href="#">Inicio</a></li>
+                            <li class="navbar__item container-submenu">
+                                <a class="navbar__link submenu-btn" href="#">Servicios <i class="fa fa-chevron-down"></i></a>
+                                <ul class="submenu">
+                                    <li class="navbar__item"><a class="navbar__link" href="services-cctv.html">CCTV</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-doorbell.html">Video porteros</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-networking.html">Infraestructura de red</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-telephone-ip.html">Telefonía IP</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-domotic.html">Domótica</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-alarm.html">Sistemas de alarmas</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar__item"><a class="navbar__link" href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                            <li class="navbar__item"><a class="navbar__link" href="#">Contacto</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>    
+        </header>
+        <main class="main">
+            <section class="main__header">
+                <h1>
+                    Instalación de cámaras de vigilancia
+                </h1>
+                <a class="btn" href="#">
+                    Observa más
+                    <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
+                </a>
+            </section>
+        </main>
+        <footer>
+            <section class="contact__container">
+                <div>
+                    <h2>
+                        Formulario de contacto
+                    </h2>
+                </div>
+                <center>
+                    <form action="enviar.php" method="post">
+                        <input type="text" name="nombre" placeholder="NOMBRE">
+                        <input type="email" name="email" placeholder="CORREO">
+                        <textarea name="mensaje" type="text" placeholder="MENSAJE">
+                            
+                        </textarea>
+                        <input type="submit" value="ENVIAR" class="enviar">
+                    </form>
+                </center>
+            </section>
+            <section class="footer__container">
+                <div class="footer__container--logo">
+                    <div class="footer__container--logo--name">
+                        <figure>
+                            <img src="./assets/logo/logo-mya.svg" alt="">
+                            <figcaption>
+                                Su seguridad en sus manos
+                            </figcaption>
+                        </figure>
+                    </div>  
+
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact--redes">
+                        <h3>
+                            Siguenos en:
+                        </h3>
+                        <a><i class="fa-brands fa-facebook"></i></a>
+                        <a><i class="fa-brands fa-instagram-square"></i></a>
+                        <a><i class="fa-brands fa-whatsapp-square"></i></a>
+                    </div>
+                    <div class="footer__contact--medios"> 
+                        <h3>
+                            Contacto:
+                        </h3>
+                        <p>
+                            email:wmfiorini@gmail.com
+                        </p>
+                        <p>
+                            Teléfono: +598 99 334 787
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__legal">
+                    <p>
+                        ©2022 MyA Soluciones Integrales
+                    </p>
+                    <a href="#">
+                        política de privacidad
+                    </a>
+                </div>
+            </section>
+        </footer>
+            <!-- GLIDER JS -->
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>    
+        <script src="./js/app.js"></script>
+    </body>
+</html>
