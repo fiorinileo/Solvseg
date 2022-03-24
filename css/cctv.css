@@ -61,12 +61,6 @@
 html{
     font-size: 62.5%;
 }
-button{
-    text-decoration: none;
-    outline-style: none;
-    box-shadow:none;
-    border-style: none;
-}
 main{
     padding-top: 87px;
 }
@@ -126,7 +120,7 @@ p{
     max-width:600px;
     margin: auto;
     text-shadow: 0px 2px 2px rgba(51, 51, 51, 0.25);
-
+    font-size: 2rem;
 }
 
 
@@ -146,6 +140,10 @@ p{
 .main__header h1{
     text-shadow: var(--basic-black) 2px 2px 7px;
 }
+.main__header p{
+    color: var(--font-white);
+    padding: 5px;
+}
 .btn, .btn-ch{
     width: 250px;
     height: 60px;
@@ -161,10 +159,7 @@ p{
     justify-content: center;
     margin: auto;
 }
-.btn-ch{
-    width:200px;
-    height:43px;
-}
+
 .btn img{
     width: 60px;
     margin: 7px;
