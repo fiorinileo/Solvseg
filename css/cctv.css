@@ -141,8 +141,14 @@ p{
     text-shadow: var(--basic-black) 2px 2px 7px;
 }
 .main__header p{
+    text-shadow: var(--basic-black) 2px 2px 3px;
     color: var(--font-white);
-    padding: 5px;
+    padding: 50px 20px;
+}
+.main-container{
+    max-width: 1200px;
+    width:90%;
+    margin: auto;
 }
 .btn, .btn-ch{
     width: 250px;
@@ -186,6 +192,7 @@ background: var(--purple-60);
 /* --- --- CAROUSEL --- --- */
 .carousel__contenedor {
 	position: relative;
+    scrollbar-face-color:transparent;
 }
 div .carousel__indicadores .glider-dot{
     background:var(--action-purple);
@@ -232,6 +239,8 @@ div .carousel__indicadores .glider-dot{
     padding: 10px;
     margin: 10px;
     border-radius: 4px;
+    max-height: 120px;
+    object-fit: center;
 }
 
 .carousel__indicadores .glider-dot {
@@ -261,7 +270,7 @@ div .carousel__indicadores .glider-dot{
     vertical-align: top;
     margin-right: 20px;
     width:100%;
-    max-width: 550px;
+    max-width: 150px;
     height:170px;
     object-fit: cover;
 }

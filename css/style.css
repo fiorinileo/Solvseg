@@ -228,7 +228,7 @@ div .carousel__indicadores .glider-dot{
 }
 
 .carousel__lista {
-	overflow: hidden;
+	scrollbar-face-color:transparent;
 }
 
 .carousel__elemento {
