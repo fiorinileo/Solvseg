@@ -179,10 +179,11 @@ background: var(--purple-60);
     text-align: center;
     padding: 10px 0;
 }
-.main__business .business__logo img{
+.presentation .business__logo img{
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     padding: 10px 0;
+    margin: auto;
 }
 .main__business .business__logo figure{
     text-align: center;
