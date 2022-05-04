@@ -1,7 +1,7 @@
 /*navbar*/
 .navbar{
     /* background: linear-gradient(272.74deg, var(--brand-green) 0%, var(--green-normal) 100%); */
-    background:var(--basic-white);
+    background:var(--basic-black);
     position:fixed;
     width:100%;
     z-index: 1000;
@@ -27,7 +27,7 @@
 .navbar-toggle{
     border: transparent;
     background: transparent;
-    color: var(--font-black);
+    color: var(--font-white);
     font-size: 1.4rem;
 }
 
@@ -44,8 +44,8 @@
     display: inline-block;
 }
 .navbar__name-logo{
-    padding: 10px 0;
-    color: var(--basic-black);
+    padding: 10px 20px;
+    color: var(--font-white);
     font-size: 3rem;
 }
 .navbar__link{
@@ -57,7 +57,7 @@
     padding: 0 10px;
     border-radius: 5px;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    color: var(--font-black);
+    color: var(--font-white);
     text-decoration: none;
 }
 
