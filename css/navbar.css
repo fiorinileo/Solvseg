@@ -158,7 +158,6 @@
                     
 /*navbar*/
 .navbar{
-    /* background: linear-gradient(272.74deg, var(--brand-green) 0%, var(--green-normal) 100%); */
     background:var(--basic-black);
     position:fixed;
     width:100%;
@@ -179,10 +178,6 @@
     display:flex;
     justify-content: space-between;
     text-align: center;
-}
-.navbar-header a{
-    display: flex;
-    align-items: center;
 }
 
 .navbar-toggle{
@@ -288,4 +283,7 @@
         padding-bottom: 20px;
     }
 
+    .navbar{
+        height: 89px;
+    }
  }
