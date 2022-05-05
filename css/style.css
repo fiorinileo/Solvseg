@@ -11,7 +11,10 @@
 
 
                     /* 🇻​​​​​🇦​​​​​🇷​​​​​🇮​​​​​🇦​​​​​🇧​​​​​🇱​​​​​🇪​​​​​🇸​​​​​ */
-
+@font-face {
+    font-family: 'Engravers-Gothic-Regular' ;
+    src: url(../fonts/Engravers-Gothic-Regular.ttf);
+}
 :root{
     /*🇨​​​​​🇴​​​​​🇱​​​​​🇴​​​​​🇷​​​​​🇸​​​​​*/
             /*      𝘽𝙍𝘼𝙉𝘿 𝘾𝙊𝙇𝙊𝙍𝙎        */
@@ -73,7 +76,7 @@ main{
 body{
     min-width: 320px;
     color:var(--font-black);
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Engravers-Gothic-Regular', sans-serif;
     font-size: 1.4rem;
     background: var(--font-white);
 }
