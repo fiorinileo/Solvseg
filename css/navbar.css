@@ -5,6 +5,7 @@
     position:fixed;
     width:100%;
     z-index: 1000;
+    height:89px;
 }
 
 .container{
@@ -22,7 +23,10 @@
     justify-content: space-between;
     text-align: center;
 }
-
+.navbar-header a{
+    display: flex;
+    align-items: center;
+}
 
 .navbar-toggle{
     border: transparent;
@@ -44,9 +48,9 @@
     display: inline-block;
 }
 .navbar__name-logo{
+    font-family: var(--font-bold);
     padding: 10px 20px;
     color: var(--font-white);
-    font-size: 3rem;
 }
 .navbar__link{
     display:block;
@@ -97,7 +101,7 @@
 
     .container-submenu{
         position: relative;
-        width: 153.6px;
+        width: 170px;
     }
     .submenu{
         background: #0f0f0f7a;
@@ -125,9 +129,6 @@
         width:291px;
         height:auto;
         padding-bottom: 20px;
-    }
-    .navbar{
-        height:89px;
     }
 
  }
