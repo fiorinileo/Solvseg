@@ -286,4 +286,10 @@
     .navbar{
         height: 89px;
     }
- }
+    .main__business .business__logo-container{
+        flex-direction: row;
+    }
+    .business__logo-name{
+        padding: 30px;
+    }
+}
