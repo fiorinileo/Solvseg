@@ -82,13 +82,13 @@
                         border-style: none;
                     }
                     main{
-                        padding-top: 87px;
+                        padding-top: 84px;
                     }
                     body{
                         min-width: 320px;
                         color:var(--font-black);
                         font-family: var(--font-regular), sans-serif;
-                        font-size: 1.4rem;
+                        font-size: 1.7rem;
                         background: var(--font-white);
                     }
                     input{
@@ -120,18 +120,19 @@
                         list-style: none;
                     }
                     input, textarea{
+                        font-family: var(--font-regular);
                         display: block;
-                        max-width:174px;
                         min-width: 174px;
+                        width: 100%;
                         min-height: 35px;
                         background: #E5E5E5;
                         border: 1.5px solid var(--action-purple);
                         box-sizing: border-box;
                         border-radius: 4px;
                         font-weight: 700;
-                        padding: 5px 20px;
+                        padding: 8px 10px;
                         align-items: center;
-                        margin: 10px auto;
+                        margin: 0px auto 10px;
                     }
                     input{
                         height:35px;

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/style-au.css">
-    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -48,36 +48,43 @@
                                 <li class="navbar__item"><a class="navbar__link" href="services-alarm.html">Sistemas de alarmas</a></li>
                             </ul>
                         </li>
-                        <li class="navbar__item"><a class="navbar__link" href="#">Acerca de nosotros</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#">Contacto</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="./sobre-nosotros.html">Acerca de nosotros</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="./contact.html">Contacto</a></li>
                         
                     </ul>
                 </nav>
             </div>    
     </header>
     <main class="main">
+        <section class="main__header">
+            <h1>
+               Contáctenos
+            </h1>
+            <p>ESTAMOS AQUÍ PARA AYUDAR</p>
+        </section>
         <div class="contenedor">
-                
+               
             <section class="contact__container">
-                <div>
+                <section>
                     <h2>
-                        Formulario de contacto
+                        Póngase en contacto con nosotros hoy
                     </h2>
-                </div>
-                <center>
+                    <p>
+                        para poner nuestros sistemas de seguridad integral de alta seguridad en el centro de su solución de seguridad, envíenos un mensaje para hablar con uno de nuestros técnicos hoy.
+                    </p>
+                </section>
+                <section  class="form__container">
                     <form action="/cgi-sys/FormMail.cgi" method="POST">
-                        <input type="text" name="recipient" value="leonardofiorini87@gmail.com">
-                        <input type="hidden" name="subject" value="Asunto del Email">
-                        <input type="hidden" name="redirect" value="contact-done.html">
-
-                        <input type="text" name="subject" placeholder="NOMBRE" size="20">
-                        <input type="email" name="email" placeholder="CORREO" size="20">
-                        <textarea name="mensaje" type="text" value="MENSAJE">
-                            
-                        </textarea>
-                        <input type="submit" value="ENVIAR" class="enviar">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" name="subject" placeholder="Introduzca su nombre" size="20">
+                        <label for="name">Dirección de correo electrónico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo electrónico" size="20">
+                        <label for="name">Mensaje</label>
+                        <textarea name="mensaje" type="text" placeholder="Ingrese su mensaje" maxlength="5000"></textarea>
+                        <input type="submit" value="ENVIAR MENSAJE" class="enviar">
                     </form>
-                </center>
+                </section>
+                
             </section>
                 
                 
@@ -111,12 +118,12 @@
                         <h3>
                             Contacto:
                         </h3>
-                        <p>
-                            email: wmfiorini@gmail.com
-                        </p>
-                        <p>
-                            Teléfono: +598 99 334 787
-                        </p>
+                        <a class="tag--mailto" href="mailto:wmfiorini@gmail.com">
+                            wmfiorini@gmail.com
+                        </a>
+                        <a class="tag--mailto" href="tel:+59899334787">
+                            +598 99 334 787
+                        </a>
                     </div>
                 </div>
                 <div class="footer__legal">
