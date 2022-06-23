@@ -62,9 +62,6 @@ background: var(--purple-60);
 .carousel__contenedor {
 	position: relative;
 }
-div .carousel__indicadores .glider-dot{
-    background:var(--action-purple);
-}
 
 .carousel__anterior,
 .carousel__siguiente {
