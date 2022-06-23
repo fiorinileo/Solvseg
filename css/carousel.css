@@ -9,13 +9,19 @@
     
 }
 .carousel__services__presentation--description{
+    display: flex;
+    align-items: center;
+    height: 200px;
     padding-bottom: 20px;
+
 }
 
 .carousel__services__container{
     height:100%;
 }
 .carousel__services__presentation--title{
+    display: flex;
     align-items: center;
-    height:66px;
+    justify-content: center;
+    height:80px;
 }
