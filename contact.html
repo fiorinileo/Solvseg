@@ -26,9 +26,10 @@
     <header class="navbar">
             <div class="container flex-nav">
                 <div class="navbar-header">
-                    <a href="/index.html">
-                        <img class="navbar__logo" src="./assets/logo/logo-mya.svg" alt="Logo de empresa M&A">
+                    <a href="./index.html">
+                        <img class="navbar__logo" src="./assets/logo/logo-mya-original.svg" alt="Logo de empresa M&A">
                     </a>
+                    <h1 class="navbar__name-logo">M&A</h1>
                     <button class="navbar-toggle" id="navbarToggle">
                         <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
                     </button>
@@ -74,13 +75,16 @@
                     </p>
                 </section>
                 <section  class="form__container">
-                    <form action="/cgi-sys/FormMail.cgi" method="POST">
+                    <form action="enviar.php" method="post">
                         <label for="name">Nombre</label>
                         <input id="name" type="text" name="subject" placeholder="Introduzca su nombre" size="20">
+
                         <label for="name">Dirección de correo electrónico</label>
                         <input type="email" name="email" placeholder="Ingrese su correo electrónico" size="20">
+
                         <label for="name">Mensaje</label>
-                        <textarea name="mensaje" type="text" placeholder="Ingrese su mensaje" maxlength="5000"></textarea>
+                        <textarea name="message" id="message" type="text" placeholder="Ingrese su mensaje" maxlength="5000"></textarea>
+
                         <input type="submit" value="ENVIAR MENSAJE" class="enviar">
                     </form>
                 </section>
@@ -97,7 +101,8 @@
                 <div class="footer__container--logo">
                     <div class="footer__container--logo--name">
                         <figure>
-                            <img src="./assets/logo/logo-mya.svg" alt="">
+                            <img src="./assets/logo/logo-mya-sw.png" alt="imagen de logo de M&A">
+                            <h2>M&A</h2>
                             <figcaption>
                                 Su seguridad en sus manos
                             </figcaption>
@@ -107,23 +112,23 @@
                 </div>
                 <div class="footer__contact">
                     <div class="footer__contact--redes">
-                        <h3>
+                        <h2>
                             Siguenos en:
-                        </h3>
-                        <a><i class="fa-brands fa-facebook-square fa-stack-2x"></i></a>
-                        <a><i class="fa-brands fa-instagram-square fa-stack-2x"></i></a>
-                        <a><i class="fa-brands fa-whatsapp-square fa-stack-2x"></i></a>
+                        </h2>
+                        <a href="#"><i class="fa-brands fa-facebook-square fa-stack-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square fa-stack-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp-square fa-stack-2x"></i></a>
                     </div>
                     <div class="footer__contact--medios"> 
-                        <h3>
+                        <h2>
                             Contacto:
-                        </h3>
-                        <a class="tag--mailto" href="mailto:wmfiorini@gmail.com">
-                            wmfiorini@gmail.com
-                        </a>
-                        <a class="tag--mailto" href="tel:+59899334787">
-                            +598 99 334 787
-                        </a>
+                        </h2>
+                        <p>
+                            email: wmfiorini@gmail.com
+                        </p>
+                        <p>
+                            Teléfono: +598 99 334 787
+                        </p>
                     </div>
                 </div>
                 <div class="footer__legal">
