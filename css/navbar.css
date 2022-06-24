@@ -209,6 +209,7 @@
     background-color: var(--purple-80);
 }
 .navbar__logo{
+    width: 54px;
     height:60px;
     display: inline-block;
 }
@@ -244,7 +245,18 @@
     height: 0;
     overflow: auto;
 }
-
+.hamburger-icon{
+    width: 37px;
+    height: 26.5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.down-arrow{    
+    width: 21px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .submenu .navbar__item{
     padding-left: 50px;
 }

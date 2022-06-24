@@ -37,6 +37,7 @@
 }
 .btn img{
     width: 60px;
+    height: 40px;
     margin: 7px;
 }
 .carousel__services__container .btn-ch{
@@ -46,6 +47,7 @@
 }
 .carousel__services__container .btn-ch img{
     width:40px;
+    height: 27px;
     margin: 7px;
     height:auto;
 }
@@ -118,10 +120,10 @@ background: var(--purple-60);
     border-radius:4px;
 }
 .services__container img{
+    width:250px;
+    height: 158px;
     vertical-align: top;
     margin-right: 20px;
-    width:100%;
-    max-width: 550px;
     object-fit: cover;
 }
 .services__title{
@@ -151,8 +153,8 @@ background: var(--purple-60);
     padding: 30px;
 }
 .main__business .business__logo-container img{
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
+    height: 216px;
     padding: 10px 0;
 }
 .main__business .business__logo-container figure{

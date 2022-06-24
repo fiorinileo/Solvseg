@@ -45,6 +45,7 @@ footer .footer__container a{
     min-width: 180px;
 }
 .footer__container--logo--name img{
+    width: 74px;
     height:81px;
 }
 .footer__container--logo--name h2{
