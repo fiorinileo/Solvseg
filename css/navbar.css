@@ -14,10 +14,12 @@
                     @font-face {
                         font-family: 'Engravers-Gothic-Regular' ;
                         src: url(../fonts/Engravers-Gothic-Regular.ttf);
+                        font-display: swap
                     }
                     @font-face {
                         font-family: 'Engravers-Gothic-Bold' ;
                         src: url(../fonts/Engravers-Gothic-Bold.ttf);
+                        font-display: swap
                     }
                     :root{
                         /*🇨​​​​​🇴​​​​​🇱​​​​​🇴​​​​​🇷​​​​​🇸​​​​​*/
@@ -175,8 +177,8 @@
 .flex-nav{
     display: flex;
     flex-direction: column;
-}
 
+}
 .navbar-header{
     display:flex;
     justify-content: space-between;
@@ -192,11 +194,19 @@
 
 .main-navbar{
     height:0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .navbar-open{
    height: 100vh;
+   padding-bottom: 150px;
+}
+.navbar-open::-webkit-scrollbar{
+    width: 2.5px;
+}
+.navbar-open::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: var(--purple-80);
 }
 .navbar__logo{
     height:60px;
@@ -232,7 +242,7 @@
 }
 .submenu {
     height: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .submenu .navbar__item{
@@ -245,6 +255,7 @@
     }
     .main-navbar{
         height: auto;
+        overflow:hidden ;
     }
     .navbar-toggle{
         display: none;

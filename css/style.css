@@ -6,7 +6,7 @@
     width:100%;
     height:calc(100vh - 95px);
     min-height: 500px;
-    background: url("../assets/images/domo-fondo.jpg") no-repeat center center/cover;
+    background: url("../assets/images/domo-fondo.webp") no-repeat center center/cover;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -130,7 +130,7 @@ background: var(--purple-60);
 /*              🇧​​​​​🇺​​​​​🇸​​​​​🇮​​​​​🇳​​​​​🇪​​​​​🇸​​​​​🇸​​​​​                   */
 .main__business{
     margin-bottom: 30px;
-    background: linear-gradient(180deg, #098B64 0%, #526C64 100%);
+    background: linear-gradient(180deg, #098B64 0%, #047050 100%);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius:4px;
     color: var(--font-white);
@@ -146,6 +146,9 @@ background: var(--purple-60);
     color: var(--font-white);
     text-align: center;
     padding: 10px 0;
+}
+.main__business h2{
+    padding: 30px;
 }
 .main__business .business__logo-container img{
     width: 100%;

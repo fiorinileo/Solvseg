@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CCTV, nos encargamos de la seguridad virtual y física de su propiedad">
         <!-- GLIDER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <!-- CUSTOM CSS -->
@@ -31,7 +32,7 @@
                         <img class="navbar__logo" src="./assets/logo/logo-mya-original.svg" alt="Logo de empresa M&A">
                     </a>
                     <h1 class="navbar__name-logo">M&A</h1>
-                    <button class="navbar-toggle" id="navbarToggle">
+                    <button class="navbar-toggle" id="navbarToggle" aria-label="botón para desplegar menú">
                         <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
                     </button>
                 </div>
@@ -42,12 +43,23 @@
                         <li class="navbar__item container-submenu">
                             <a class="navbar__link submenu-btn" href="#">Servicios <i class="fa fa-chevron-down"></i></a>
                             <ul class="submenu">
-                                <li class="navbar__item"><a class="navbar__link" href="services-cctv.html">CCTV</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="services-doorbell.html">Video porteros</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="services-networking.html">Infraestructura de red</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="services-telephone-ip.html">Telefonía IP</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="services-domotic.html">Domótica</a></li>
-                                <li class="navbar__item"><a class="navbar__link" href="services-alarm.html">Sistemas de alarmas</a></li>
+                                <div>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-cctv.html">CCTV</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-doorbell.html">Video porteros</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-networking.html">Infraestructura de red</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-telephone-ip.html">Telefonía IP</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-domotic.html">Domótica</a></li>
+                                    <li class="navbar__item"><a class="navbar__link" href="services-alarm.html">Sistemas de alarmas</a></li>
+                                    
+                                </div>
+                               <div>
+                                <li class="navbar__item"><a class="navbar__link" href="services-cctv.html">Seguridad privada para eventos</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-doorbell.html">Alarmas contra incendios</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-networking.html">Vallado de eventos</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-telephone-ip.html">Armado de equipos</a></li>
+                                <li class="navbar__item"><a class="navbar__link" href="services-domotic.html">Instalación de Cerca eléctricas</a></li>
+                               </div>
+                                
                             </ul>
                         </li>
                         <li class="navbar__item"><a class="navbar__link" href="sobre-nosotros.html">Acerca de nosotros</a></li>
@@ -78,14 +90,13 @@
                         
                             <ul class="carousel__lista">
                                     <li class="carousel__elemento">  
-                                        <img src="./assets/images/bullet-fondo-1.jpg" alt="cámara tipo domo">
+                                        <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Instalación de cámaras de seguridad
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Desde proyectos profesionales, hasta hogares de familia. Brindando un excelente servicio gracias a la comunicación lograda con nuestros clientes, obtenemos siempre los mejores acuerdos.  
-                                            </p>        
+                                                Desde proyectos profesionales, hasta hogares de familia. Brindando un excelente servicio gracias a la comunicación lograda con nuestros clientes, obtenemos siempre los mejores acuerdos.</p>        
                                             <a class="btn-ch" href="./services-cctv.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -95,11 +106,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/videoportero-1.jpg" alt="Imágen de videoportero Dahua en pared">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Instalación de videoporteros
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -109,12 +120,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/patchors-switch.jpg" alt="Conexiones de patchores a switch">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Creación, reparación y/o mantenimiento de insfraestructura de redes
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.
-                                            </p>        
+                                                Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.</p>        
                                             <a class="btn-ch" href="./services-networking.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -124,12 +134,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/telefonia-ip.jpg" alt="Teléfono ip">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Telefonía IP
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Dentro de un ambiente de oficina con varios departamentos, la mejor forma de optimizar la comunicación sin sumar distracciones es la telefonía fija mediante IP, rápida, sencilla y eficiente.
-                                                </p>        
+                                                Dentro de un ambiente de oficina con varios departamentos, la mejor forma de optimizar la comunicación sin sumar distracciones es la telefonía fija mediante IP, rápida, sencilla y eficiente.</p>        
                                             <a class="btn-ch" href="./services-telephone-ip.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -140,12 +149,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/smart-home.jpg" alt="smart home">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Domótica
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Tecnología de vanguardia para edificios y hogares inteligentes. Reduce costos e incrementa la eficiencia de todos los sistemas.
-                                            </p>        
+                                                Tecnología de vanguardia para edificios y hogares inteligentes. Reduce costos e incrementa la eficiencia de todos los sistemas.</p>        
                                             <a class="btn-ch" href="./services-domotic.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -153,14 +161,13 @@
                                         </div> 
                                     </li>
                                     <li class="carousel__elemento">
-                                        <img src="./assets/images/alarma-intrusion.jpg" alt="Harmony Tower">
+                                        <img src="./assets/images/alarma-intrusion.jpg" alt="alarma de intrusión">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Alarmas de intrusión
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Instalamos alarmas de intrusión, como su nombre las destribe, son dispositivos que alertan de la presencia de instrusos dentro de su área de acción. Son una excelente opción tanto para hogares como predios 
-                                            </p>        
+                                                Instalamos alarmas de intrusión, como su nombre las destribe, son dispositivos que alertan de la presencia de instrusos dentro de su área de acción. Son una excelente opción tanto para hogares como predios.</p>        
                                             <a class="btn-ch" href="./services-alarm.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -170,11 +177,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/seguridad-eventos.jpg" alt="Constitution Square - Tower I">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Seguridad Privada para eventos
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -184,11 +191,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/alarma-incendio.jpg" alt="Constitution Square - Tower I">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
-                                                Alarmas de incendios
-                                            </h3>
+                                            <h2 class="carousel__services__presentation--title">
+                                                Alarmas contra incendios
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -198,11 +205,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/vallado.jpg" alt="Constitution Square - Tower I">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Vallado de eventos
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -212,11 +219,11 @@
                                     <li class="carousel__elemento">
                                         <img src="./assets/images/armado-equipos.jpg" alt="Constitution Square - Tower I">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Armado de equipos
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="" srcset="">
@@ -224,13 +231,27 @@
                                         </div>
                                     </li>
                                     <li class="carousel__elemento">
-                                        <img src="./assets/images/cerca-electrica.jpg" alt="Foto de cerca eléctrica">
+                                        <img src="./assets/images/cerca-electrica.webp" alt="Foto de cerca eléctrica">
                                         <div class="carousel__services__container">
-                                            <h3 class="carousel__services__presentation--title">
+                                            <h2 class="carousel__services__presentation--title">
                                                 Instalación de cercas eléctricas
-                                            </h3>
+                                            </h2>
                                             <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.                                            </p>        
+                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
+                                            <a class="btn-ch" href="./services-doorbell.html">
+                                                Observa más
+                                                <img src="./assets/icons/ojo-mya.svg" alt="ojo del logo de M&A" srcset="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="carousel__elemento">
+                                        <img src="./assets/images/mantenimiento.jpg" alt="Foto de cerca eléctrica">
+                                        <div class="carousel__services__container">
+                                            <h2 class="carousel__services__presentation--title">
+                                                Mantenimiento mensual de insumos e Infraestructura
+                                            </h2>
+                                            <p class="carousel__services__presentation--description">
+                                                Nuestro servicio de mantenimiento mensual llega para garantizarle su tranquilidad a la hora de contratar cualquier otro servicio, brindando una atención extra por cualquier fallo inesperado, con rápida aplicación para que no se malgasten recursos.</p>        
                                             <a class="btn-ch" href="./services-doorbell.html">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-mya.svg" alt="ojo del logo de M&A" srcset="">
@@ -257,7 +278,7 @@
                             <figure class="business__logo">
                                 <img src="./assets/logo/logo-mya-sw.svg" alt="#">
                             </figure>
-                            <h1 class="business__logo-name">M&A</h1>
+                            <h2 class="business__logo-name">M&A</h2>
                         </div>
                         <div class="business__description">
                             <p>
@@ -295,7 +316,8 @@
                 <div class="footer__container--logo">
                     <div class="footer__container--logo--name">
                         <figure>
-                            <img src="./assets/logo/logo-mya.svg" alt="">
+                            <img src="./assets/logo/logo-mya-sw.png" alt="imagen de logo de M&A">
+                            <h2>M&A</h2>
                             <figcaption>
                                 Su seguridad en sus manos
                             </figcaption>
@@ -305,17 +327,17 @@
                 </div>
                 <div class="footer__contact">
                     <div class="footer__contact--redes">
-                        <h3>
+                        <h2>
                             Siguenos en:
-                        </h3>
-                        <a><i class="fa-brands fa-facebook-square fa-stack-2x"></i></a>
-                        <a><i class="fa-brands fa-instagram-square fa-stack-2x"></i></a>
-                        <a><i class="fa-brands fa-whatsapp-square fa-stack-2x"></i></a>
+                        </h2>
+                        <a href="#"><i class="fa-brands fa-facebook-square fa-stack-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square fa-stack-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp-square fa-stack-2x"></i></a>
                     </div>
                     <div class="footer__contact--medios"> 
-                        <h3>
+                        <h2>
                             Contacto:
-                        </h3>
+                        </h2>
                         <p>
                             email: wmfiorini@gmail.com
                         </p>
