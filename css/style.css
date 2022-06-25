@@ -7,7 +7,6 @@
     height:calc(100vh - 95px);
     min-height: 500px;
     background: url("../assets/images/domo-fondo.webp") no-repeat center center/cover;
-    background-attachment: fixed;
     display:flex;
     flex-direction:column;
     align-items: center;

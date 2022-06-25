@@ -71,7 +71,8 @@ p{
     padding-top: 95px;
     width:100%;
     height:calc(100vh - 95px);
-    background: url("../assets/images/domo-fondo.webp") no-repeat center center/cover;
+    min-height:500px;
+    background: url("../assets/images/cctv-fondo.jpg") no-repeat center center/cover;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -89,7 +90,7 @@ p{
 .main-container{
     max-width: 1200px;
     width:90%;
-    margin: auto;
+    margin: 10px auto;
 }
 .btn, .btn-ch{
     width: 250px;
@@ -250,4 +251,43 @@ div .carousel__indicadores .glider-dot{
 .business__ajust{
     max-width: 1200px;
     margin: auto;
+}
+
+.cctv-info--img img{
+    width: 50%;
+    min-width: 270px;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.porfolio__header h2{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.porfolio__header h2::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--brand-green);
+    bottom: 0%;
+    z-index: 10;
+}
+
+.porfolio__gallery{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 20px;
+}
+
+.porfolio__gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+
 }
