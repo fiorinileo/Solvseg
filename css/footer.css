@@ -111,3 +111,14 @@ footer .footer__container a{
         text-decoration: none;
     
 }
+.wpp-contact{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+}
+.wpp-contact img{
+    width: 100%;
+}
