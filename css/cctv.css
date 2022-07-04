@@ -259,6 +259,9 @@ div .carousel__indicadores .glider-dot{
     margin: 0 auto;
     border-radius: 2px;
 }
+.cctv-presentation h2, .cctv-presentation h3{
+ padding: 10px;
+}
 .porfolio__header h2{
     text-align: center;
     position: relative;

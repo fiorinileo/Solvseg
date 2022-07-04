@@ -215,6 +215,7 @@
 }
 .navbar__name-logo{
     font-family: var(--font-bold);
+    font-size: 4rem;
     padding: 10px 20px;
     color: var(--font-white);
 }
