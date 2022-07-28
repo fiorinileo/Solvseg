@@ -186,7 +186,9 @@
     justify-content: space-between;
     text-align: center;
 }
-
+.navbar-header a{
+    display: flex;
+}
 .navbar-toggle{
     border: transparent;
     background: transparent;
