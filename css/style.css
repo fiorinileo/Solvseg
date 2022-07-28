@@ -53,6 +53,9 @@
     margin: 7px;
     height:auto;
 }
+.carousel__services__presentation--description{
+    margin: 5px auto;
+}
 .carousel__elemento{
     scroll-margin-top: 120px;
 }
@@ -142,7 +145,7 @@ background: var(--purple-60);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius:4px;
     color: var(--font-white);
-
+    scroll-margin-top: 100px;
 }
 .main__business div{
     padding: 10px 10px 20px;
@@ -186,4 +189,8 @@ background: var(--purple-60);
 .business__ajust{
     max-width: 1200px;
     margin: auto;
+}
+
+.main__services{
+    scroll-margin-top: 120px;
 }
