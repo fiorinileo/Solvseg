@@ -175,7 +175,7 @@ background: var(--purple-60);
     justify-content: space-around;
 }
 .business__logo-name{
-    font-size: 10rem;
+    font-size: 6rem;
 }
 .main__business .business__button{
     padding: 20px 0;
