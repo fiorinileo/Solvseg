@@ -53,6 +53,9 @@
     margin: 7px;
     height:auto;
 }
+.carousel__elemento{
+    scroll-margin-top: 120px;
+}
 .btn:hover, .btn-ch:hover{
 background: var(--purple-60);
 }
