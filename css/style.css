@@ -211,25 +211,39 @@ background: var(--purple-60);
 }
 
 .modalContainer .modal-content {
-    background-color: #fefefe;
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    max-width: 600px;
     margin: auto;
-    padding: 20px;
     border: 1px solid lightgray;
     border-top: 10px solid var(--green-normal);
-    max-width: 600px;
-
-    
     background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
     background-color: #fefefe;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .modalContainer .close {
+    width: 34px;
+    height: 34px;
+    align-self: end;
+    text-align: center;
+    justify-content: center;
+    background-color: #fefefe;
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 50%;
+}
+
+.modal-content div{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .modalContainer .close:hover,
@@ -239,12 +253,13 @@ background: var(--purple-60);
     cursor: pointer;
 }
 
-#myModal h2{
-    padding: 1px 5px;
+.modalContainer h2{
     font-size: 4rem;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     color: white;
     background-color: #1c1d2185;
-    margin-top: 86px;
-    margin-bottom: 160px;
+}
+
+.modalContainer p{
+    background: #fefefe;
 }
