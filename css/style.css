@@ -209,7 +209,65 @@ background: var(--purple-60);
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
+/* FONDO PARA MODAL DE CCTV*/
+#Modal-cctv .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
 
+/* FONDO PARA MODAL DE VIDEOPORTERO*/
+#Modal-doorbell .modal-content{
+    background-image: url(../assets/images/videoportero1-1.jpeg);
+}
+
+/* FONDO PARA MODAL DE REDES DE DATOS*/
+#Modal-networking .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE TELEFONÍA IP*/
+#Modal-telephone-ip .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE DOMÓMITCA*/
+#Modal-domotic .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE ALARMAS DE INTRUSIÓN*/
+#Modal-alarm .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE SEGURIDAD PRIVADA*/
+#Modal-seguridadPrivada .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE ALARMAS CONTRA INCENDIO*/
+#Modal-alarmaIncendio .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE VALLADO DE EVENTOS*/
+#Modal-vallado .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE ARMADO DE EQUIPOS*/
+#Modal-armadoEquipos .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE CERCAS ELÉCTRICAS*/
+#Modal-cercaElectrica .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
+
+/* FONDO PARA MODAL DE MANTENIMIENTO*/
+#Modal-mantenimiento .modal-content{
+    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
+}
 .modalContainer .modal-content {
     display: flex;
     height: 270px;
@@ -218,7 +276,6 @@ background: var(--purple-60);
     margin: auto;
     border: 1px solid lightgray;
     border-top: 10px solid var(--green-normal);
-    background-image: url(../assets/images/cctv-gallery/camara-esquinera-.jpeg);
     background-color: #fefefe;
     background-size: cover;
     background-repeat: no-repeat;
