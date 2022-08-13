@@ -16,50 +16,19 @@ navbar.addEventListener("click", () => {
 
 /* -----------------------MODAL-------------------*/
 
-// Extraemos todos los botones de los modal hacia una constante
-const btnModalCctv = document.getElementById("btn-modal-cctv");
-const btnModalDoorbell = document.getElementById("btn-modal-doorbell");
-const btnModalNetworking= document.getElementById("btn-modal-networking");
-const btnModalTelephone = document.getElementById("btn-modal-telephone");
-const btnModaDomotic = document.getElementById("btn-modal-domotic");
-const btnModalAlarm = document.getElementById("btn-modal-alarm");
-const btnModalSeguridadPrivada = document.getElementById("btn-modal-seguridadPrivada");
-const btnModalAlarmaIncendio = document.getElementById("btn-modal-alarmaIncendio");
-const btnModalVallado = document.getElementById("btn-modal-vallado");
-const btnModalArmadoEquipos = document.getElementById("btn-modal-armadoEquipos");
-const btnModalCercaElectrica = document.getElementById("btn-modal-cercaElectrica");
-const btnModalMantenimiento = document.getElementById("btn-modal-mantenimiento");
-
-//Le agregamos un Event Listener a todos los botones
-btnModalCctv.addEventListener("click", )
-btnModalDoorbell.addEventListener("click", )
-btnModalNetworking.addEventListener("click", )
-btnModalTelephone.addEventListener("click", )
-btnModaDomotic.addEventListener("click", )
-btnModalAlarm.addEventListener("click", )
-btnModalSeguridadPrivada.addEventListener("click", )
-btnModalAlarmaIncendio.addEventListener("click", )
-btnModalVallado.addEventListener("click", )
-btnModalArmadoEquipos.addEventListener("click", )
-btnModalCercaElectrica.addEventListener("click", )
-btnModalMantenimiento.addEventListener("click", )
-
-
-
-function abrirModal(seccion){
+function abrirModal(seccion,indice){
 	
-	let modal = document.getElementById("Modal-cctv");
-	let btn = document.getElementById("btn-modal-cctv");
-	let span = document.getElementsByClassName("close")[0];
+	let modal = document.getElementById("Modal-"+seccion);
+	let btn = document.getElementById("btn-modal"+seccion);
+	let span = document.getElementsByClassName("close")[indice];
 	let body = document.getElementsByTagName("body")[0];
-
-	btn.onclick = function () {
+	 console.log(btn);
+	
 		modal.style.display = "block";
-
 		body.style.position = "static";
 		body.style.height = "100%";
 		body.style.overflow = "visible";
-	}
+	
 
 	span.onclick = function() {
 		modal.style.display = "none";
@@ -80,7 +49,7 @@ function abrirModal(seccion){
 	}
 }
 
-
+/* 
 if(document.getElementById("btn-modal-cctv")){
 	
 	var modal = document.getElementById("Modal-cctv");
@@ -114,3 +83,4 @@ if(document.getElementById("btn-modal-cctv")){
 		}
 	}
 }
+ */

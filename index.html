@@ -73,7 +73,7 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Desde proyectos profesionales, hasta hogares de familia. Brindando un excelente servicio gracias a la comunicación lograda con nuestros clientes, obtenemos siempre los mejores acuerdos.</p>        
-                                            <button class="btn-ch" id="btn-modal-cctv">
+                                            <button class="btn-ch" id="btn-modal-cctv" onclick="abrirModal('cctv',0)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
@@ -98,7 +98,7 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-doorbell">
+                                            <button class="btn-ch" id="btn-modal-doorbell" onclick="abrirModal('doorbell',1)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
@@ -106,7 +106,6 @@
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <h2>videoportero</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
                                                 <p>Instalamos videoportero y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                             
@@ -121,7 +120,7 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.</p>        
-                                            <button class="btn-ch" id="btn-modal-networking">
+                                            <button class="btn-ch" id="btn-modal-networking" onclick="abrirModal('networking',2)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
@@ -129,7 +128,6 @@
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <h2>Redes de datos</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div> 
@@ -142,15 +140,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Dentro de un ambiente de oficina con varios departamentos, la mejor forma de optimizar la comunicación sin sumar distracciones es la telefonía fija mediante IP, rápida, sencilla y eficiente.</p>        
-                                            <button class="btn-ch" id="btn-modal-telephone">
+                                            <button class="btn-ch" id="btn-modal-telephone" onclick="abrirModal('telephone-ip',3)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-telephone-ip" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Telefonía IP</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div> 
@@ -164,15 +161,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Tecnología de vanguardia para edificios y hogares inteligentes. Reduce costos e incrementa la eficiencia de todos los sistemas.</p>        
-                                            <button class="btn-ch" id="btn-modal-domotic">
+                                            <button class="btn-ch" id="btn-modal-domotic" onclick="abrirModal('domotic',4)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-domotic" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Domótica</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div> 
@@ -185,15 +181,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Instalamos alarmas de intrusión, como su nombre las destribe, son dispositivos que alertan de la presencia de instrusos dentro de su área de acción. Son una excelente opción tanto para hogares como predios.</p>        
-                                            <button class="btn-ch" id="btn-modal-alarm">
+                                            <button class="btn-ch" id="btn-modal-alarm" onclick="abrirModal('alarm',5)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-alarm" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>alarmas de intrusión</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div> 
@@ -206,15 +201,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-seguridadPrivada">
+                                            <button class="btn-ch" id="btn-modal-seguridadPrivada" onclick="abrirModal('seguridadPrivada',6)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg">
                                             </button>
                                             <div id="Modal-seguridadPrivada" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Seguridad Privada para eventos</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
@@ -227,15 +221,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-alarmaIncendios">
+                                            <button class="btn-ch" id="btn-modal-alarmaIncendios" onclick="abrirModal('alarmaIncendio',7)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-alarmaIncendio" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Sistema de alarmas contra incendios</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
@@ -248,15 +241,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-vallado">
+                                            <button class="btn-ch" id="btn-modal-vallado" onclick="abrirModal('vallado',8)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-vallado" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Vallado de eventos</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
@@ -269,15 +261,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-armadoEquipos">
+                                            <button class="btn-ch" id="btn-modal-armadoEquipos" onclick="abrirModal('armadoEquipos',9)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-armadoEquipos" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Armado de eqipos</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
@@ -290,15 +281,14 @@
                                             </h2>
                                             <p class="carousel__services__presentation--description">
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-cercaElectrica">
+                                            <button class="btn-ch" id="btn-modal-cercaElectrica" onclick="abrirModal('cercaElectrica',10)">
                                                 Observa más
                                                 <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-cercaElectrica" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Instalación de cercas eléctricas</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
@@ -313,13 +303,12 @@
                                                 Garantizamos su tranquilidad a la hora de contratar cualquier otro servicio, brindando una atención extra por cualquier fallo inesperado, con rápida aplicación para que no se malgasten recursos.</p>        
                                             <button class="btn-ch" id="btn-modal-mantenimiento">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
+                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" onclick="abrirModal('mantenimiento',11)">
                                             </button>
                                             <div id="Modal-mantenimiento" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
-                                                <h2>CCTV</h2>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
+                                                <h2>Mantenimiento de insumos</h2>
                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
                                             </div> 
                                         </div>
