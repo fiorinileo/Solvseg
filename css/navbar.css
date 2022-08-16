@@ -219,7 +219,7 @@
     display: inline-block;
 }
 .navbar__name-logo{
-    font-family: var(--font-bold);
+    font-family: var(--font-regular);
     font-size: 4rem;
     padding: 10px 20px;
     color: var(--font-white);
