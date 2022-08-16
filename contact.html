@@ -25,38 +25,24 @@
                 <a href="index.html">
                     <img class="navbar__logo " src="./assets/logo/logo-solvseg-original.svg" alt="Logo de empresa solvseg">
                 </a>
-                <h1 class="navbar__name-logo ">SOLVSEG</h1>
-                <button class="navbar-toggle" id="navbarToggle" aria-label="botón para desplegar menú">
-                    <img class="hamburger-icon " aria-hidden="true" src="./assets/icons/Hamburger_icon.png"></img>
-                </button>
+                <a href="index.html">
+                    <h1 class="navbar__name-logo ">SOLVSEG</h1>
+                </a>
+                    <button class="hamburger hamburger--collapse" id="navbarToggle" aria-label="botón para desplegar menú" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>  
             </div>
             
             <nav class="main-navbar" id="main-navbar">
                 <ul class="menu" id="menu">
                     <li class="navbar__item"><a class="navbar__link" href="./index.html">Inicio</a></li>
                     <li class="navbar__item container-submenu">
-                        <a class="navbar__link submenu-btn" href="#">Servicios <!-- <img class="down-arrow" alt="fecla hacia abajo" src="./assets/icons/down-arrow.png"> </img>--></a>
-                        <!-- <ul class="submenu">
-                            
-                            <li class="navbar__item"><a class="navbar__link" href="#cctv">CCTV</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#doorbell">Video porteros</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#networking">Infraestructura de red</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#telephone-ip">Telefonía IP</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#domotic">Domótica</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#alarm">Sistemas de alarmas</a></li>
-                        
-                            <li class="navbar__item"><a class="navbar__link" href="#seguridadPrivada">Seguridad privada para eventos</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#alarmaIncendio">Alarmas contra incendios</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#vallado">Vallado de eventos</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#armadoEquipos">Armado de equipos</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#cercaElectrica">Instalación de Cerca eléctricas</a></li>
-                           
-                            
-                        </ul> -->
+                        <a id="navbar__link--services"class="navbar__link submenu-btn" href="./index.html#servicios">Servicios</a>    
                     </li>
-                    <li class="navbar__item"><a class="navbar__link" href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#main__business">Acerca de nosotros</a></li>
                     <li class="navbar__item"><a class="navbar__link" href="contact.html">Contacto</a></li>
-                    
                 </ul>
             </nav>
         </div>    
@@ -93,10 +79,7 @@
                         <input type="submit" value="ENVIAR MENSAJE" class="enviar">
                     </form>
                 </section>
-                
             </section>
-                
-                
         </div>
     </main>
     <footer>
@@ -104,40 +87,53 @@
         <article class="contact-info__container">
             <section class="footer__container">
                 <div class="footer__container--logo">
-                    <div class="footer__container--logo--name">
+                    <div>
                         <figure>
                             <img src="./assets/logo/logo-solvseg-sw.png" alt="imagen de logo de solvseg">
-                            <h2>SOLVSEG</h2>
-                            <figcaption>
-                                Su seguridad en sus manos
-                            </figcaption>
                         </figure>
+                        <div class="footer__container--logo--name">
+                            <div>
+                                <h2>SOLVSEG</h2>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Su seguridad en sus manos
+                        </p>
                     </div>  
-
                 </div>
                 <div class="footer__contact">
-                    <div class="footer__contact--medios"> 
+                    <div>
                         <h2>
                             Contacto:
                         </h2>
-                        <p>
-                            email:
-                        </p>
-                        <a href="mailto:wmfiorini@gmail.com">
-                            wmfiorini@gmail.com
-                        </a>
-                        <p>
+                    </div>
+                    <div class="footer__contact--medios"> 
+                        <div>
+                            <p>
+                                email:
+                            </p>
+                            <a href="mailto:wmfiorini@gmail.com">
+                                wmfiorini@gmail.com
+                            </a>
+                        </div>
+                        <div> 
+                            <p>
                             Teléfono:
-                        </p>
-                        <a href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" target="_blank">
-                             +598 99 334 787
-                        </a>
+                            </p>
+                            <a href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" target="_blank">
+                                +598 99 334 787
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-contact">
                         <a href="./contact.html" class="btn-ch contact-button"> contáctanos </a>
                     </div>
                 </div>
                 <div class="footer__legal">
                     <p>
-                        ©2022 SOLVSEG Soluciones Integrales
+                        ©2022 SOLVSEG Solvencias en seguridad
                     </p>
                     <a href="#">
                         política de privacidad
@@ -146,6 +142,11 @@
             </section>
         </article>
     </footer>
+    <aside>
+        <a title="mensaje por Whatsapp" href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" class="wpp-contact" target="_blank">
+            <img src="./assets/icons/WhatsApp_icon.png" alt="">
+        </a>
+    </aside>
     <!-- GLIDER JS -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>    
     <script src="./js/app.js"></script>

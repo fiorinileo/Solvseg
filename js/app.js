@@ -5,10 +5,12 @@ const servicesLink= document.getElementById("navbar__link--services");
 //add event listener
 navbarToggle.addEventListener("click", ()=>{
     navbar.classList.toggle('navbar-open');
+	navbarToggle.classList.toggle('is-active');
 });
 navbar.addEventListener("click", () => {
 	if(navbar.classList.contains('navbar-open')){
 	navbar.classList.remove('navbar-open');
+	navbarToggle.classList.toggle('is-active');
 }
 })
 

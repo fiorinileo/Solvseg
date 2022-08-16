@@ -20,31 +20,33 @@
 </head>
 <body id="body-start">
     <header class="navbar">
-            <div class="container flex-nav">
-                <div class="navbar-header">
-                    <a href="index.html">
-                        <img class="navbar__logo " src="./assets/logo/logo-solvseg-original.svg" alt="Logo de empresa solvseg">
-                    </a>
-                    <a href="index.html">
-                        <h1 class="navbar__name-logo ">SOLVSEG</h1>
-                    </a>
-                    <button class="navbar-toggle" id="navbarToggle" aria-label="botón para desplegar menú">
-                        <img class="hamburger-icon " aria-hidden="true" src="./assets/icons/Hamburger_icon.png"></img>
-                    </button>
-                </div>
-                
-                <nav class="main-navbar" id="main-navbar">
-                    <ul class="menu" id="menu">
-                        <li class="navbar__item"><a class="navbar__link" href="#body-start">Inicio</a></li>
-                        <li class="navbar__item container-submenu">
-                            <a id="navbar__link--services"class="navbar__link submenu-btn" href="#servicios">Servicios</a>    
-                        </li>
-                        <li class="navbar__item"><a class="navbar__link" href="#main__business">Acerca de nosotros</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="contact.html">Contacto</a></li>
-                        
-                    </ul>
-                </nav>
-            </div>    
+        <div class="container flex-nav">
+            <div class="navbar-header">
+                <a href="index.html">
+                    <img class="navbar__logo " src="./assets/logo/logo-solvseg-original.svg" alt="Logo de empresa solvseg">
+                </a>
+                <a href="index.html">
+                    <h1 class="navbar__name-logo ">SOLVSEG</h1>
+                </a>
+                    <button class="hamburger hamburger--collapse" id="navbarToggle" aria-label="botón para desplegar menú" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>  
+            </div>
+            
+            <nav class="main-navbar" id="main-navbar">
+                <ul class="menu" id="menu">
+                    <li class="navbar__item"><a class="navbar__link" href="#body-start">Inicio</a></li>
+                    <li class="navbar__item container-submenu">
+                        <a id="navbar__link--services"class="navbar__link submenu-btn" href="#servicios">Servicios</a>    
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link" href="#main__business">Acerca de nosotros</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="contact.html">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </div>    
     </header>
     <main class="main">
         <section class="main__header">
@@ -76,7 +78,7 @@
                                                 Desde proyectos profesionales, hasta hogares de familia. Brindando un excelente servicio gracias a la comunicación lograda con nuestros clientes, obtenemos siempre los mejores acuerdos.</p>        
                                             <button class="btn-ch" id="btn-modal-cctv" onclick="abrirModal('cctv',0)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
+                                                
                                             </button>
                                             <div id="Modal-cctv" class="modalContainer">
                                                 <div>
@@ -101,7 +103,7 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-doorbell" onclick="abrirModal('doorbell',1)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
+                                                
                                             </button>
                                             <div id="Modal-doorbell" class="modalContainer">
                                                 <div class="modal-content">
@@ -127,8 +129,8 @@
                                                 Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.</p>        
                                             <button class="btn-ch" id="btn-modal-networking" onclick="abrirModal('networking',2)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
+                                            
                                             <div id="Modal-networking" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
@@ -150,7 +152,7 @@
                                                 Dentro de un ambiente de oficina con varios departamentos, la mejor forma de optimizar la comunicación sin sumar distracciones es la telefonía fija mediante IP, rápida, sencilla y eficiente.</p>        
                                             <button class="btn-ch" id="btn-modal-telephone" onclick="abrirModal('telephone-ip',3)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
+                                                
                                             </button>
                                             <div id="Modal-telephone-ip" class="modalContainer">
                                                 <div class="modal-content">
@@ -173,13 +175,11 @@
                                                 Tecnología de vanguardia para edificios y hogares inteligentes. Reduce costos e incrementa la eficiencia de todos los sistemas.</p>        
                                             <button class="btn-ch" id="btn-modal-domotic" onclick="abrirModal('domotic',4)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-domotic" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>Domótica</h2>
                                                 </div>
                                             </div> 
@@ -196,13 +196,12 @@
                                                 Instalamos alarmas de intrusión, como su nombre las destribe, son dispositivos que alertan de la presencia de instrusos dentro de su área de acción. Son una excelente opción tanto para hogares como predios.</p>        
                                             <button class="btn-ch" id="btn-modal-alarm" onclick="abrirModal('alarm',5)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
+                                                
                                             </button>
                                             <div id="Modal-alarm" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>alarmas de intrusión</h2>
                                                 </div>
                                             </div> 
@@ -219,13 +218,11 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-seguridadPrivada" onclick="abrirModal('seguridadPrivada',6)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg">
                                             </button>
                                             <div id="Modal-seguridadPrivada" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>Seguridad Privada para eventos</h2>
                                                 </div>
                                             </div> 
@@ -242,7 +239,6 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-alarmaIncendios" onclick="abrirModal('alarmaIncendio',7)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-alarmaIncendio" class="modalContainer">
                                                 <div class="modal-content">
@@ -264,13 +260,11 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-vallado" onclick="abrirModal('vallado',8)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-vallado" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>Vallado de eventos</h2>
                                                 </div>
                                             </div> 
@@ -287,13 +281,11 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-armadoEquipos" onclick="abrirModal('armadoEquipos',9)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-armadoEquipos" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>Armado de eqipos</h2>
                                                 </div>
                                             </div> 
@@ -310,13 +302,11 @@
                                                 Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
                                             <button class="btn-ch" id="btn-modal-cercaElectrica" onclick="abrirModal('cercaElectrica',10)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
                                             </button>
                                             <div id="Modal-cercaElectrica" class="modalContainer">
                                                 <div class="modal-content">
                                                 <span class="close">×</span> 
                                                 <div>
-
                                                     <h2>Instalación de cercas eléctricas</h2>
                                                 </div>
                                             </div> 
@@ -333,7 +323,6 @@
                                                 Garantizamos su tranquilidad a la hora de contratar cualquier otro servicio, brindando una atención extra por cualquier fallo inesperado, con rápida aplicación para que no se malgasten recursos.</p>        
                                             <button class="btn-ch" id="btn-modal-mantenimiento" onclick="abrirModal('mantenimiento',11)">
                                                 Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" >
                                             </button>
                                             <div id="Modal-mantenimiento" class="modalContainer">
                                                 <div class="modal-content">
@@ -372,23 +361,7 @@
                                 Nuestro servicio consiste en la instalación, configuración y puesta en marcha del sistema de cámaras de seguridad, alarmas, video porteros y control de accesos. Proporcionamos el soporte técnico y lo asesoramos para su correcto uso. Trabajamos para brindarle al cliente la tranquilidad de que ante cualquier duda e inconveniente estaremos siempre a las órdenes. Nos aseguramos de que las personas que operen las cámaras entiendan su funcionamiento y, de ser necesario, brindamos capacitación especial sin costo. Damos la garantía que frente a cualquier cambio a futuro que el cliente desee realizar en el local a nivel estructural, lo asesoraremos sin costo, de acuerdo a las políticas de seguridad establecidas
                             </p>
                         </div>
-                        <div class="business__mision">
-                            <h3>
-                                Misión
-                            </h3>
-                    
-                                <p>
-                                    Nuestra misión es ofrecer nuestros servicios de seguridad a todas aquellas personas y empresas que los necesiten. Teniendo presente la importancia de la instalación de sistemas de seguridad y su mantenimiento a largo plazo, brindar un constante servicio de altos estándares de nuestro producto, trabajando siempre con las mejores marcas, empresas del mercado y las mejores prácticas.
-                                </p>
-                        </div>
-                        <div class="business__vision">
-                            <h3>
-                                Visión
-                            </h3>
-                            <p>
-                                Ser una empresa referente en soluciones y asesoramiento de seguridad, especializada en la protección de activos con criterios profesionales en el país.
-                            </p>
-                        </div>
+                        
                         <div class="business__button">
                             <a href="sobre-nosotros.html" class="btn">Conocenos más</a>
                         </div>

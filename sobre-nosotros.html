@@ -7,6 +7,7 @@
             <!-- GLIDER JS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
         <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/cctv.css">
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/navbar.css">
@@ -24,20 +25,23 @@
                     <a href="index.html">
                         <img class="navbar__logo " src="./assets/logo/logo-solvseg-original.svg" alt="Logo de empresa solvseg">
                     </a>
-                    <h1 class="navbar__name-logo ">SOLVSEG</h1>
-                    <button class="navbar-toggle" id="navbarToggle" aria-label="botón para desplegar menú">
-                        <img class="hamburger-icon " aria-hidden="true" src="./assets/icons/Hamburger_icon.png"></img>
-                    </button>
+                    <a href="index.html">
+                        <h1 class="navbar__name-logo ">SOLVSEG</h1>
+                    </a>
+                        <button class="hamburger hamburger--collapse" id="navbarToggle" aria-label="botón para desplegar menú" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                          </button>  
                 </div>
                 
                 <nav class="main-navbar" id="main-navbar">
                     <ul class="menu" id="menu">
                         <li class="navbar__item"><a class="navbar__link" href="./index.html">Inicio</a></li>
                         <li class="navbar__item container-submenu">
-                            <a class="navbar__link submenu-btn" href="./index.html#servicios">Servicios <!-- <img class="down-arrow" alt="fecla hacia abajo" src="./assets/icons/down-arrow.png"> </img>--></a>
-                            
+                            <a id="navbar__link--services"class="navbar__link submenu-btn" href="./index.html#servicios">Servicios</a>   
                         </li>
-                        <li class="navbar__item"><a class="navbar__link" href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#main__business">Acerca de nosotros</a></li>
                         <li class="navbar__item"><a class="navbar__link" href="contact.html">Contacto</a></li>
                         
                     </ul>
@@ -52,19 +56,42 @@
                 <p>Ofrecemos servicio en todo el país, y de gran calidad tanto de imágen, conexión y fluidez a la hora de operar.</p>
                 
             </section>
-            <section class="main-container">
-                <article class="cctv-info">
-                    <section>
-                        <div>
-                            <h2>Nosotros</h2>
+            <section class="main__business" id="main__business">
+                <div class="business__ajust">
+                    <div class="business__title">
+                        <h2>
+                            Nosotros
+                        </h2>
+                    </div>
+                    <div class="business__logo-container">
+                        <figure class="business__logo">
+                            <img src="./assets/logo/logo-solvseg-sw.svg" alt="#">
+                        </figure>
+                        <h2 class="business__logo-name">SOLVSEG</h2>
+                    </div>
+                    <div class="business__description">
+                        <p>
+                            Nuestro servicio consiste en la instalación, configuración y puesta en marcha del sistema de cámaras de seguridad, alarmas, video porteros y control de accesos. Proporcionamos el soporte técnico y lo asesoramos para su correcto uso. Trabajamos para brindarle al cliente la tranquilidad de que ante cualquier duda e inconveniente estaremos siempre a las órdenes. Nos aseguramos de que las personas que operen las cámaras entiendan su funcionamiento y, de ser necesario, brindamos capacitación especial sin costo. Damos la garantía que frente a cualquier cambio a futuro que el cliente desee realizar en el local a nivel estructural, lo asesoraremos sin costo, de acuerdo a las políticas de seguridad establecidas
+                        </p>
+                    </div>
+                    <div class="business__mision">
+                        <h3>
+                            Misión
+                        </h3>
+                
                             <p>
-                                M&A Soluciones Integrales es una empresa uruguaya enfocada en los sistemas de seguridad con el propósito de ofrecer servicios en el ámbito de las tecnologías de la información, enfocándonos en los objetivos y preferencias de nuestros clientes tanto empresas como familias. Resolviendo problemas de toda índole; desde fallas en cableados, reconfiguraciones de centrales de alarmas, terminales o dificultades en la calidad de imagen de cámaras de seguridad. Para ofrecer y cumplir con nuestros altos estándares empleamos las mejores marcas que estén a la vanguardia en el sector, así como los mejores materiales, equipos pasivos y activos; y contamos con personal profesional de amplia experiencia en el rubro de circuito cerrado de televisión (CCTV), alarmas, video porteros, control de acceso, redes de datos y soporte técnico.</p>
-                        </div>
-                        <!-- <video autoplay width="320px" height="240px" loop muted>
-                                <source src="./assets/video/video-camaras.mp4">
-                        </video> -->
-                    </section>
-                </article>
+                                Nuestra misión es ofrecer nuestros servicios de seguridad a todas aquellas personas y empresas que los necesiten. Teniendo presente la importancia de la instalación de sistemas de seguridad y su mantenimiento a largo plazo, brindar un constante servicio de altos estándares de nuestro producto, trabajando siempre con las mejores marcas, empresas del mercado y las mejores prácticas.
+                            </p>
+                    </div>
+                    <div class="business__vision">
+                        <h3>
+                            Visión
+                        </h3>
+                        <p>
+                            Ser una empresa referente en soluciones y asesoramiento de seguridad, especializada en la protección de activos con criterios profesionales en el país.
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -72,40 +99,56 @@
             <article class="contact-info__container">
                 <section class="footer__container">
                     <div class="footer__container--logo">
-                        <div class="footer__container--logo--name">
+                        <div>
                             <figure>
                                 <img src="./assets/logo/logo-solvseg-sw.png" alt="imagen de logo de solvseg">
-                                <h2>SOLVSEG</h2>
-                                <figcaption>
-                                    Su seguridad en sus manos
-                                </figcaption>
                             </figure>
+                            <div class="footer__container--logo--name">
+                                <div>
+                                    <h2>SOLVSEG</h2>    
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Su seguridad en sus manos
+                            </p>
                         </div>  
     
                     </div>
                     <div class="footer__contact">
-                        <div class="footer__contact--medios"> 
+                        <div>
                             <h2>
                                 Contacto:
                             </h2>
-                            <p>
-                                email:
-                            </p>
-                            <a href="mailto:wmfiorini@gmail.com">
-                                wmfiorini@gmail.com
-                            </a>
-                            <p>
+                        </div>
+                        <div class="footer__contact--medios"> 
+                            <div>
+                                <p>
+                                    email:
+                                </p>
+                                <a href="mailto:wmfiorini@gmail.com">
+                                    wmfiorini@gmail.com
+                                </a>
+                            </div>
+                            <div> 
+                                <p>
                                 Teléfono:
-                            </p>
-                            <a href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" target="_blank">
-                                 +598 99 334 787
-                            </a>
+                                </p>
+                                <a href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" target="_blank">
+                                    +598 99 334 787
+                                </a>
+                            </div>
+                                
+                               
+                        </div>
+                        <div class="btn-contact">
                             <a href="./contact.html" class="btn-ch contact-button"> contáctanos </a>
                         </div>
                     </div>
                     <div class="footer__legal">
                         <p>
-                            ©2022 SOLVSEG Soluciones Integrales
+                            ©2022 SOLVSEG Solvencias en seguridad
                         </p>
                         <a href="#">
                             política de privacidad
@@ -114,6 +157,11 @@
                 </section>
             </article>
         </footer>
+        <aside>
+            <a title="mensaje por Whatsapp" href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" class="wpp-contact" target="_blank">
+                <img src="./assets/icons/WhatsApp_icon.png" alt="">
+            </a>
+        </aside>
             <!-- GLIDER JS -->
         <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>    
         <script src="./js/app.js"></script>

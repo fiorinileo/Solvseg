@@ -124,8 +124,6 @@ background: var(--purple-60);
 .services__container{
     margin: 30px 0;
     padding: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius:2px;
 }
 .services__container img{
     width:270px;
@@ -140,7 +138,7 @@ background: var(--purple-60);
 /*              🇧​​​​​🇺​​​​​🇸​​​​​🇮​​​​​🇳​​​​​🇪​​​​​🇸​​​​​🇸​​​​​                   */
 .main__business{
     margin-bottom: 30px;
-    background: linear-gradient(180deg, #098B64 0%, #047050 100%);
+    background: linear-gradient(180deg, #3a3a3a 0%, #1c1d21 100%);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius:4px;
     color: var(--font-white);
