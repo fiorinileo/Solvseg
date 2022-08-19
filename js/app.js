@@ -24,7 +24,6 @@ function abrirModal(seccion,indice){
 	let btn = document.getElementById("btn-modal"+seccion);
 	let span = document.getElementsByClassName("close")[indice];
 	let body = document.getElementsByTagName("body")[0];
-	 console.log(btn);
 	
 		modal.style.display = "block";
 		body.style.position = "static";
