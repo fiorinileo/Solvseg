@@ -28,12 +28,11 @@ function abrirModal(seccion,indice){
 		modal.style.display = "block";
 		body.style.position = "static";
 		body.style.height = "100%";
-		body.style.overflow = "visible";
-	
+		body.style.overflow = "hidden";
+
 
 	span.onclick = function() {
 		modal.style.display = "none";
-
 		body.style.position = "inherit";
 		body.style.height = "auto";
 		body.style.overflow = "visible";
