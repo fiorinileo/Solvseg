@@ -1,470 +1,564 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CCTV, nos encargamos de la seguridad virtual y física de su propiedad">
-        <!-- GLIDER JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    
-    <link rel="shortcut icon" href="./assets/logo/logo-solvseg-sw.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <title>Solvseg | Inicio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!--------------------- Titulo --------------------->
-    <title>Home | SOLVSEG</title>
+  <!-- Favicons -->
+    <link rel="shortcut icon" href="./assets/img/logo-solvseg-sw.png" type="image/x-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body id="body-start">
-    <header class="navbar">
-            <div class="container flex-nav">
-                <div class="navbar-header">
-                    <a href="index.html">
-                        <img class="navbar__logo " src="./assets/logo/logo-solvseg-original.svg" alt="Logo de empresa solvseg">
-                    </a>
-                    <a href="index.html">
-                        <h1 class="navbar__name-logo ">SOLVSEG</h1>
-                    </a>
-                    <button class="navbar-toggle" id="navbarToggle" aria-label="botón para desplegar menú">
-                        <img class="hamburger-icon " aria-hidden="true" src="./assets/icons/Hamburger_icon.png"></img>
-                    </button>
-                </div>
-                
-                <nav class="main-navbar" id="main-navbar">
-                    <ul class="menu" id="menu">
-                        <li class="navbar__item"><a class="navbar__link" href="#body-start">Inicio</a></li>
-                        <li class="navbar__item container-submenu">
-                            <a id="navbar__link--services"class="navbar__link submenu-btn" href="#servicios">Servicios</a>    
-                        </li>
-                        <li class="navbar__item"><a class="navbar__link" href="#main__business">Acerca de nosotros</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="contact.html">Contacto</a></li>
-                        
-                    </ul>
-                </nav>
-            </div>    
-    </header>
-    <main class="main">
-        <section class="main__header">
-            <h2 class="">
-                Instalación de cámaras de vigilancia
-            </h2>
-            <a class="btn " href="contact.html">
-                Contáctanos
-                
-            </a>
-        </section>
-        <div class="contenedor">
-                <section class="main__services" id="servicios">
-                    <div class="services__container">
-                        <div class="services__title">
-                            <h2>
-                                Servicios
-                            </h2> 
-                        </div>
-                        
-                            <ul class="carousel__lista">
-                                    <li class="carousel__elemento" id="cctv">  
-                                        <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Instalación de cámaras de seguridad
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Desde proyectos profesionales, hasta hogares de familia. Brindando un excelente servicio gracias a la comunicación lograda con nuestros clientes, obtenemos siempre los mejores acuerdos.</p>        
-                                            <button class="btn-ch" id="btn-modal-cctv" onclick="abrirModal('cctv',0)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-cctv" class="modalContainer">
-                                                <div>
-                                                    <div class="modal-content">
-                                                        <span class="close">×</span> 
-                                                        <div>
-                                                            <h2>CCTV</h2>
-                                                        </div>
-                                                </div>
-                                                <!-- <img src="./assets/images/bullet-fondo-1.webp" alt="cámara tipo domo" style="margin:5px auto;"> -->
-                                                <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                            </div> 
-                                        </div> 
-                                    </li>
-                                    <li class="carousel__elemento " id="doorbell">
-                                        <img src="./assets/images/videoportero-1.jpg" alt="Imágen de videoportero Dahua en pared">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Instalación de videoporteros y<br>control de accesos
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-doorbell" onclick="abrirModal('doorbell',1)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-doorbell" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
-                                                    <h2>videoporteros</h2>
-                                                </div>
-                                                 </div>
-                                                 <p>Instalamos videoportero y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p>
-                                                
-                                            </div> 
-                                            
 
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento " id="networking">
-                                        <img src="./assets/images/patchors-switch.webp" alt="Conexiones de patchores a switch">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Creación, reparación y/o mantenimiento de infraestructura de redes
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.</p>        
-                                            <button class="btn-ch" id="btn-modal-networking" onclick="abrirModal('networking',2)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-networking" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
-                                                    <h2>Redes de datos</h2>
-                                                </div>
-                                                 </div> 
-                                                 <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p>
-                                            </div> 
-                                        </div> 
-                                    </li>
-                                    <li class="carousel__elemento " id="telephone-ip">
-                                        <img src="./assets/images/telefonia-ip.webp" alt="Teléfono ip">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Telefonía IP
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Dentro de un ambiente de oficina con varios departamentos, la mejor forma de optimizar la comunicación sin sumar distracciones es la telefonía fija mediante IP, rápida, sencilla y eficiente.</p>        
-                                            <button class="btn-ch" id="btn-modal-telephone" onclick="abrirModal('telephone-ip',3)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-telephone-ip" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
-                                                    <h2>Telefonía IP</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div> 
-                                    </li>
-                    
-                                    <li class="carousel__elemento " id="domotic">
-                                        <img src="./assets/images/domotica.webp" alt="smart home">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Domótica
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Tecnología de vanguardia para edificios y hogares inteligentes. Reduce costos e incrementa la eficiencia de todos los sistemas.</p>        
-                                            <button class="btn-ch" id="btn-modal-domotic" onclick="abrirModal('domotic',4)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-domotic" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+<body>
 
-                                                    <h2>Domótica</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div> 
-                                    </li>
-                                    <li class="carousel__elemento " id="alarm">
-                                        <img src="./assets/images/alarma-intrusion.webp" alt="alarma de intrusión">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Alarmas de intrusión
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Instalamos alarmas de intrusión, como su nombre las destribe, son dispositivos que alertan de la presencia de instrusos dentro de su área de acción. Son una excelente opción tanto para hogares como predios.</p>        
-                                            <button class="btn-ch" id="btn-modal-alarm" onclick="abrirModal('alarm',5)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-alarm" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-                                                    <h2>alarmas de intrusión</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div> 
-                                    </li>
-                                    <li class="carousel__elemento " id="seguridadPrivada">
-                                        <img src="./assets/images/seguridad-eventos.webp" alt="Constitution Square - Tower I">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Seguridad Privada para eventos
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-seguridadPrivada" onclick="abrirModal('seguridadPrivada',6)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg">
-                                            </button>
-                                            <div id="Modal-seguridadPrivada" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+      <div class="logo">
+        <h1><a href="index.html">Solvseg</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
-                                                    <h2>Seguridad Privada para eventos</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento " id="alarmaIncendio">
-                                        <img src="./assets/images/alarma-incendio.webp" alt="Constitution Square - Tower I">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Alarmas contra incendios
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-alarmaIncendios" onclick="abrirModal('alarmaIncendio',7)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-alarmaIncendio" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                    <div>
-                                                        <h2>Sistema de alarmas contra incendios</h2>
-                                                    </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento " id="vallado">
-                                        <img src="./assets/images/vallado.webp" alt="Constitution Square - Tower I">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Vallado de eventos
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-vallado" onclick="abrirModal('vallado',8)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-vallado" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portafolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Trabaja con nosotros</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-                                                    <h2>Vallado de eventos</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento " id="armadoEquipos">
-                                        <img src="./assets/images/armado-equipos.webp" alt="Sala de oficina con equipamiento nuevo">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Armado de equipos
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-armadoEquipos" onclick="abrirModal('armadoEquipos',9)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-armadoEquipos" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+    </div>
+  </header><!-- End Header -->
 
-                                                    <h2>Armado de eqipos</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento " id="cercaElectrica">
-                                        <img src="./assets/images/cerca-electrica.webp" alt="Foto de cerca eléctrica">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Instalación de cercas eléctricas
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Ideal para el control de accesos, la vigilancia por video, recepción de paquetería y otras funciones que sustituyen a la portería tradicional.</p>        
-                                            <button class="btn-ch" id="btn-modal-cercaElectrica" onclick="abrirModal('cercaElectrica',10)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" srcset="">
-                                            </button>
-                                            <div id="Modal-cercaElectrica" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-                                                    <h2>Instalación de cercas eléctricas</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__elemento ">
-                                        <img src="./assets/images/mantenimiento-insumos.webp" alt="Foto de cerca eléctrica">
-                                        <div class="carousel__services__container">
-                                            <h2 class="carousel__services__presentation--title">
-                                                Mantenimiento mensual de insumos e Infraestructura
-                                            </h2>
-                                            <p class="carousel__services__presentation--description">
-                                                Garantizamos su tranquilidad a la hora de contratar cualquier otro servicio, brindando una atención extra por cualquier fallo inesperado, con rápida aplicación para que no se malgasten recursos.</p>        
-                                            <button class="btn-ch" id="btn-modal-mantenimiento" onclick="abrirModal('mantenimiento',11)">
-                                                Observa más
-                                                <img src="./assets/icons/ojo-solvseg.svg" alt="ojo del logo de solvseg" >
-                                            </button>
-                                            <div id="Modal-mantenimiento" class="modalContainer">
-                                                <div class="modal-content">
-                                                <span class="close">×</span> 
-                                                <div>
-                                                    <h2>Mantenimiento de insumos</h2>
-                                                </div>
-                                            </div> 
-                                            <p>Instalamos cámaras y de todo un poco. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque assumenda est vel neque beatae dolor delectus, repellat laborum numquam asperiores, praesentium reiciendis cum obcaecati? Quia eum nostrum nesciunt veniam architecto?</p> </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                
-                            
-                        
-
-                    </div>
-
-                </section>
-                <section class="main__business" id="main__business">
-                    <div class="business__ajust">
-                        <div class="business__title">
-                            <h2>
-                                Nosotros
-                            </h2>
-                        </div>
-                        <div class="business__logo-container">
-                            <figure class="business__logo">
-                                <img src="./assets/logo/logo-solvseg-sw.svg" alt="#">
-                            </figure>
-                            <h2 class="business__logo-name">SOLVSEG</h2>
-                        </div>
-                        <div class="business__description">
-                            <p>
-                                Nuestro servicio consiste en la instalación, configuración y puesta en marcha del sistema de cámaras de seguridad, alarmas, video porteros y control de accesos. Proporcionamos el soporte técnico y lo asesoramos para su correcto uso. Trabajamos para brindarle al cliente la tranquilidad de que ante cualquier duda e inconveniente estaremos siempre a las órdenes. Nos aseguramos de que las personas que operen las cámaras entiendan su funcionamiento y, de ser necesario, brindamos capacitación especial sin costo. Damos la garantía que frente a cualquier cambio a futuro que el cliente desee realizar en el local a nivel estructural, lo asesoraremos sin costo, de acuerdo a las políticas de seguridad establecidas
-                            </p>
-                        </div>
-                        <div class="business__mision">
-                            <h3>
-                                Misión
-                            </h3>
-                    
-                                <p>
-                                    Nuestra misión es ofrecer nuestros servicios de seguridad a todas aquellas personas y empresas que los necesiten. Teniendo presente la importancia de la instalación de sistemas de seguridad y su mantenimiento a largo plazo, brindar un constante servicio de altos estándares de nuestro producto, trabajando siempre con las mejores marcas, empresas del mercado y las mejores prácticas.
-                                </p>
-                        </div>
-                        <div class="business__vision">
-                            <h3>
-                                Visión
-                            </h3>
-                            <p>
-                                Ser una empresa referente en soluciones y asesoramiento de seguridad, especializada en la protección de activos con criterios profesionales en el país.
-                            </p>
-                        </div>
-                        <div class="business__button">
-                            <a href="sobre-nosotros.html" class="btn">Conocenos más</a>
-                        </div>
-                    </div>
-                </section>
-            
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Protege tus mayores valores con Solvseg</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Nos encargamos de diseñar soluciones en materia de seguridad acorde a sus necesidades.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="#about" class="btn-get-started scrollto">Conocé más</a>
+          </div>
         </div>
-    </main>
-    <footer>
-        
-        <article class="contact-info__container">
-            <section class="footer__container">
-                <div class="footer__container--logo">
-                    <div>
-                        <figure>
-                            <img src="./assets/logo/logo-solvseg-sw.png" alt="imagen de logo de solvseg">
-                        </figure>
-                        <div class="footer__container--logo--name">
-                            <div>
-                                <h2>SOLVSEG</h2>    
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>
-                            Su seguridad en sus manos
-                        </p>
-                    </div>  
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/logo-solvseg-sw.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
 
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
+      <div class="container">
+        <div class="row">
+          <h2 class="">
+            Empleamos las siguientes marcas
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+          <div class="col"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Nosotros</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <h3>Valores</h3>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Escucha hacia el cliente</li>
+              <li><i class="ri-check-double-line"></i> Transparecia</li>
+              <li><i class="ri-check-double-line"></i> Resolución</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <h3> Misión</h3>
+            <p>
+              Nuestra misión es ofrecer nuestros servicios de seguridad a todas aquellas personas y empresas que los necesiten. Teniendo presente la importancia de la instalación de sistemas de seguridad y su mantenimiento a largo plazo, brindar un constante servicio de altos estándares de nuestro producto aplicando las mejores prácticas, trabajando siempre con las mejores marcas y empresas del mercado.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Clientes contentos</strong> que han dado su visto bueno sobre nuestro servicio y han vuelto a solicitarlo</p>
+                  </div>
                 </div>
-                <div class="footer__contact">
-                    <div>
-                        <h2>
-                            Contacto:
-                        </h2>
-                    </div>
-                    <div class="footer__contact--medios"> 
-                        <div>
-                            <p>
-                                email:
-                            </p>
-                            <a href="mailto:wmfiorini@gmail.com">
-                                wmfiorini@gmail.com
-                            </a>
-                        </div>
-                        <div> 
-                            <p>
-                            Teléfono:
-                            </p>
-                            <a href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" target="_blank">
-                                +598 99 334 787
-                            </a>
-                        </div>
-                            
-                           
-                    </div>
-                    <div class="btn-contact">
-                        <a href="./contact.html" class="btn-ch contact-button"> contáctanos </a>
-                    </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span>+ <span data-purecounter-start="0" data-purecounter-end="210" data-purecounter-duration="1" class="purecounter" ></span> </span>
+                    <p><strong>Projectos realizados</strong> con éxito, cubriendo desde instalaciones domésticas hasta complejos proyectos para empresas de gran calibre.</p>
+                  </div>
                 </div>
-                <div class="footer__legal">
-                    <p>
-                        ©2022 SOLVSEG Solvencias en seguridad
-                    </p>
-                    <a href="#">
-                        política de privacidad
-                    </a>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span>+<span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span> </span>
+                    <p><strong>Años de experiencia</strong> en el mercado ofreciendo nuestros servicios, mejorando y buscando cumplir las máximas exigencias.</p>
+                  </div>
                 </div>
-            </section>
-        </article>
-    </footer>
-    <aside>
-        <a title="mensaje por Whatsapp" href="https://wa.me/59899334787/?text=Visité%20su%20web%20y%20quisiera%20saber%20más%20acerca%20de%20" class="wpp-contact" target="_blank">
-            <img src="./assets/icons/WhatsApp_icon.png" alt="">
-        </a>
-    </aside>
-    <script src="./js/app.js"></script>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Servicios</h2>
+          <p>Cubrimos gran variedad de sectores informáticos, por lo que trabajar con nosotros es una garantía de coordinación en diferentes áreas para mejor escalabilidad y mantenimiento.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Documentación</a></h4>
+              <p class="description">Entregamos la documentación adjunta sobre el proyecto realizado para que pueda gozar de información útil en el momento que la requiera.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Servicio confiable</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non unde nihil dolorem eaque delectus. Ad, vitae? Fugiat dolore hic minus?.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Altos estándares</a></h4>
+              <p class="description">Para mayor tranquilidad para ambas partes, siempre empleamos las mejores marcas junto con la tecnología más actualizada, esto nos garantiza mayor soporte, mejor funcionamiento, más lonjevidad de la instalación y menos mantenimiento. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Tiempo de ejecución</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consectetur, dolorum tempore perferendis magnam iusto est in enim? Inventore, explicabo!.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= More Services Section ======= -->
+    <section id="more-services" class="more-services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card" style='background-image: url("assets/img/more-services-1.jpeg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Cámaras de vigilancia</a></h5>
+                <p class="card-text">Creamos sistemas de vigilancia remota, tanto con cámaras IP, como analógicas. Brindamos el asesoramiento necesario y personalizado a su situación para optar por la mejor opción dentro de sus recursos.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Observa más</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="card" style='background-image: url("assets/img/videoportero1-1.jpeg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Control de accesos</a></h5>
+                <p class="card-text">Instalamos videoporteros y porteros cableados, analógicos, IP y Wifi. Control de acceso con huellas, biométricos, faciales.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Observa más</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("assets/img/patchors-switch.webp");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Infraestructura de red</a></h5>
+                <p class="card-text">Nos encargamos desde el diseño, la implementación y puesta a punto de una red de datos interna para su empresa, con dispositivos de excelente calidad asegurandonos su correcto funcionamiento a pesar del tiempo.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Observa más</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("assets/img/telefonia-ip.webp");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Telefonía IP</a></h5>
+                <p class="card-text">Manejamos centrales telefónicas de primera calidad, asesoramos sobre las mejores tecnologías y como actualizarse a esta si aún no la tiene.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Observa más</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End More Services Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Algunos de nuestros trabajos</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Preguntas frecuentes</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Debo pagar para recibir asesoramiento telefónico?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              No, nuestros asesoramientos telefónicos sobre nuestros servicios se pueden realizar completamente sin costo alguno.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Puedo elegir los insumos a trabajar?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Sí por supuesto, usted es libre de escoger los insumos que desee aplicar a su instalación, de igual forma si lo desea, nosotros le daremos una devolución sobre ellos para que sepa que tan buen funcionamiento otorgan y cuáles son sus fallas más comunes.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Ya cuento con una instalación hecha que no funciona del todo bien, o necesito escalarla ¿Ustedes pueden trabajarla?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Por supuesto, mayormente trabajamos sobre instalaciones ya creadas para bien corregir sus fallas, actualizarla o ampliarla. Con un relevamiento previo para conocer el área y tener una mejor idea del proyecto a  ejecutar.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contáctanos</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about">
+              <h3>Solvseg</h3>
+              <p>Puedes encontrarnos en las siguientes redes sociales para conocernos más, interactuar con nosotros además de apoyarnos a seguir creciendo.</p>
+              <div class="social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+              <div>
+                <i class="ri-map-pin-line"></i>
+                <p>Pascual costa 3879 A064<br>Montevideo, Montevideo, Uruguay</p>
+              </div>
+
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>wmfiorini@solvseg.com.uy</p>
+              </div>
+
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>+589 99 334 787</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Solvseg</strong>.
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
